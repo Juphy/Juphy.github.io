@@ -767,14 +767,14 @@
   
   <script type="text/javascript">
     var GUEST = ['nick','mail','link'];
-    var guest = 'nick';
+    var guest = 'nick, email, link';
     guest = guest.split(',').filter(function (item) {
       return GUEST.indexOf(item)>-1;
     });
     new Valine({
         el: '#comments' ,
-        verify: true,
-        notify: true,
+        verify: false,
+        notify: false,
         appId: 'Ld534hVQrPScL0zAhVHDC0Cp-gzGzoHsz',
         appKey: 'f5OLYN4RbCy9k4MPW8tKXDbW',
         placeholder: '快去抢沙发吧！！！',
