@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="es6中有关函数的方法">
+<meta name="keywords" content="JavaScript,es6,Function">
+<meta property="og:type" content="article">
+<meta property="og:title" content="函数方法">
+<meta property="og:url" content="http://blog.juphy.com/2018/03/04/函数方法/index.html">
+<meta property="og:site_name" content="挽留之王小石">
+<meta property="og:description" content="es6中有关函数的方法">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-06-18T16:58:10.646Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="函数方法">
+<meta name="twitter:description" content="es6中有关函数的方法">
+
+
+
+
+
+
+  <link rel="canonical" href="http://blog.juphy.com/2018/03/04/函数方法/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>函数方法 | 挽留之王小石</title>
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121069781-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121069781-1');
+</script>
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?050e91663609b6de0bab74e8970460da";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">挽留之王小石</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Hello,world!</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.juphy.com/2018/03/04/函数方法/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Juphy">
+      <meta itemprop="description" content="挽留天涯挽留人,挽留岁月挽留你。它就是挽留,我就是使挽留的人,只看谁是要被挽留。">
+      <meta itemprop="image" content="/images/head.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="挽留之王小石">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">函数方法
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-03-04 00:00:00" itemprop="dateCreated datePublished" datetime="2018-03-04T00:00:00+08:00">2018-03-04</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-06-19 00:58:10" itemprop="dateModified" datetime="2018-06-19T00:58:10+08:00">2018-06-19</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ECMAScript6/" itemprop="url" rel="index"><span itemprop="name">ECMAScript6</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/03/04/函数方法/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/03/04/函数方法/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+              <div class="post-description">es6中有关函数的方法</div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="参数默认值"><a href="#参数默认值" class="headerlink" title="参数默认值"></a>参数默认值</h2><figure class="highlight scilab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">ES6 允许为函数的参数设置默认值，即直接写在参数定义的后面。</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">log</span><span class="params">(x, y = 'World')</span> &#123;</span></span><br><span class="line">  console.<span class="built_in">log</span>(x, y);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">log</span>(<span class="string">'Hello'</span>) <span class="comment">// Hello World</span></span><br><span class="line"><span class="built_in">log</span>(<span class="string">'Hello'</span>, <span class="string">'China'</span>) <span class="comment">// Hello China</span></span><br><span class="line"><span class="built_in">log</span>(<span class="string">'Hello'</span>, <span class="string">''</span>) <span class="comment">// Hello</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>参数变量x是默认声明的，在函数体中，不能用let或const再次声明，否则会报错。<br>使用参数默认值时，函数不能有同名参数。</p>
+</blockquote>
+<h2 id="与解构赋值默认值结合使用"><a href="#与解构赋值默认值结合使用" class="headerlink" title="与解构赋值默认值结合使用"></a>与解构赋值默认值结合使用</h2><figure class="highlight oxygene"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span><span class="params">(&#123;x, y = 5&#125;)</span> <span class="comment">&#123;</span></span></span><br><span class="line"><span class="function"><span class="comment">  console.log(x, y);</span></span></span><br><span class="line"><span class="function"><span class="comment">&#125;</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"><span class="title">foo</span><span class="params">(&#123;&#125;)</span> // <span class="title">undefined</span> 5</span></span><br><span class="line"><span class="function"><span class="title">foo</span><span class="params">(&#123;x: 1&#125;)</span> // 1 5</span></span><br><span class="line"><span class="function"><span class="title">foo</span><span class="params">(&#123;x: 1, y: 2&#125;)</span> // 1 2</span></span><br><span class="line"><span class="function"><span class="title">foo</span><span class="params">()</span> // <span class="title">TypeError</span>:</span> Cannot <span class="keyword">read</span> <span class="keyword">property</span> <span class="string">'x'</span> <span class="keyword">of</span> undefined</span><br><span class="line">只有当函数foo的参数是一个对象时，变量x和y才会通过解构赋值生成。如果函数foo调用时没提供参数，变量x和y就不会生成，从而报错。通过提供函数参数的默认值，就可以避免这种情况。</span><br></pre></td></tr></table></figure>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 写法一</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">m1</span><span class="params">(&#123;x = 0, y = 0&#125; = &#123;&#125;)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> [x, y];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 写法二</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">m2</span><span class="params">(&#123;x, y&#125; = &#123; x: 0, y: 0 &#125;)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> [x, y];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>区别是写法一函数参数的默认值是空对象，但是设置了对象解构赋值的默认值；写法二函数参数的默认值是一个有具体属性的对象，但是没有设置对象解构赋值的默认值。<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 函数没有参数的情况</span></span><br><span class="line"><span class="function"><span class="title">m1</span><span class="params">()</span></span> <span class="comment">// [0, 0]</span></span><br><span class="line"><span class="function"><span class="title">m2</span><span class="params">()</span></span> <span class="comment">// [0, 0]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// x 和 y 都有值的情况</span></span><br><span class="line"><span class="function"><span class="title">m1</span><span class="params">(&#123;x: <span class="number">3</span>, y: <span class="number">8</span>&#125;)</span></span> <span class="comment">// [3, 8]</span></span><br><span class="line"><span class="function"><span class="title">m2</span><span class="params">(&#123;x: <span class="number">3</span>, y: <span class="number">8</span>&#125;)</span></span> <span class="comment">// [3, 8]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// x 有值，y 无值的情况</span></span><br><span class="line"><span class="function"><span class="title">m1</span><span class="params">(&#123;x: <span class="number">3</span>&#125;)</span></span> <span class="comment">// [3, 0]</span></span><br><span class="line"><span class="function"><span class="title">m2</span><span class="params">(&#123;x: <span class="number">3</span>&#125;)</span></span> <span class="comment">// [3, undefined]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// x 和 y 都无值的情况</span></span><br><span class="line"><span class="function"><span class="title">m1</span><span class="params">(&#123;&#125;)</span></span> <span class="comment">// [0, 0];</span></span><br><span class="line"><span class="function"><span class="title">m2</span><span class="params">(&#123;&#125;)</span></span> <span class="comment">// [undefined, undefined]</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">m1</span><span class="params">(&#123;z: <span class="number">3</span>&#125;)</span></span> <span class="comment">// [0, 0]</span></span><br><span class="line"><span class="function"><span class="title">m2</span><span class="params">(&#123;z: <span class="number">3</span>&#125;)</span></span> <span class="comment">// [undefined, undefined]</span></span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<h2 id="参数默认值的位置"><a href="#参数默认值的位置" class="headerlink" title="参数默认值的位置"></a>参数默认值的位置</h2><blockquote>
+<p>通常情况下，定义了默认值的参数，应该是函数的尾参数。因为这样比较容易看出来，到底省略了哪些参数。如果非尾部的参数设置默认值，实际上这个参数是没法省略的。<br>如果传入undefined，将触发该参数等于默认值，null则没有这个效果。<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 例一</span></span><br><span class="line"><span class="selector-tag">function</span> <span class="selector-tag">f</span>(x = <span class="number">1</span>, y) &#123;</span><br><span class="line">  <span class="selector-tag">return</span> <span class="selector-attr">[x, y]</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">f</span>() <span class="comment">// [1, undefined]</span></span><br><span class="line"><span class="selector-tag">f</span>(<span class="number">2</span>) <span class="comment">// [2, undefined])</span></span><br><span class="line"><span class="selector-tag">f</span>(, <span class="number">1</span>) <span class="comment">// 报错</span></span><br><span class="line"><span class="selector-tag">f</span>(undefined, <span class="number">1</span>) <span class="comment">// [1, 1]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 例二</span></span><br><span class="line"><span class="selector-tag">function</span> <span class="selector-tag">f</span>(x, y = <span class="number">5</span>, z) &#123;</span><br><span class="line">  <span class="selector-tag">return</span> <span class="selector-attr">[x, y, z]</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">f</span>() <span class="comment">// [undefined, 5, undefined]</span></span><br><span class="line"><span class="selector-tag">f</span>(<span class="number">1</span>) <span class="comment">// [1, 5, undefined]</span></span><br><span class="line"><span class="selector-tag">f</span>(<span class="number">1</span>, ,<span class="number">2</span>) <span class="comment">// 报错</span></span><br><span class="line"><span class="selector-tag">f</span>(<span class="number">1</span>, undefined, <span class="number">2</span>) <span class="comment">// [1, 5, 2]</span></span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<h2 id="函数的length属性"><a href="#函数的length属性" class="headerlink" title="函数的length属性"></a>函数的length属性</h2><blockquote>
+<p>指定了默认值以后，函数的length属性，将返回没有指定默认值的参数个数。也就是说，指定了默认值后，length属性将失真。<br>如果设置了默认值的参数不是尾参数，那么length属性也不再计入后面的参数了。</p>
+</blockquote>
+<h2 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h2><p>一旦设置了参数的默认值，函数进行声明初始化时，参数会形成一个单独的作用域（context）。等到初始化结束，这个作用域就会消失。这种语法行为，在不设置参数默认值时，是不会出现的。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> x = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params">x, y = x</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(y);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">f(<span class="number">2</span>) <span class="comment">// 2</span></span><br><span class="line">参数y的默认值等于变量x，默认值变量指向第一个参数x，而不是全局变量。</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">let <span class="keyword">x</span> = <span class="number">1</span><span class="comment">;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">function f(y = x) &#123;</span></span><br><span class="line"><span class="comment">  let x = 2;</span></span><br><span class="line"><span class="comment">  console.log(y);</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">f() // 1</span></span><br><span class="line"><span class="comment">函数f调用时，参数y = x形成一个单独的作用域。这个作用域里面，变量x本身没有定义，所以指向外层的全局变量x。函数调用时，函数体内部的局部变量x影响不到默认值变量x。</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var <span class="keyword">x</span> = <span class="number">1</span><span class="comment">;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">function foo(x = x) &#123;</span></span><br><span class="line"><span class="comment">  // ...</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment">foo() // ReferenceError: x is not defined</span></span><br><span class="line"><span class="comment">参数x = x形成一个单独作用域。实际执行的是let x = x，由于暂时性死区的原因，这行代码会报错”x 未定义“。</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">let foo = <span class="string">'outer'</span><span class="comment">;</span></span><br><span class="line"></span><br><span class="line">function bar(<span class="function"><span class="keyword">func</span> = <span class="params">()</span> =&gt; <span class="title">foo</span>) &#123;</span></span><br><span class="line">  let foo = <span class="string">'inner'</span><span class="comment">;</span></span><br><span class="line">  console.<span class="built_in">log</span>(<span class="function"><span class="keyword">func</span><span class="params">()</span>);</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">bar()<span class="comment">; // outer</span></span><br></pre></td></tr></table></figure>
+<h2 id="rest参数"><a href="#rest参数" class="headerlink" title="rest参数"></a>rest参数</h2><blockquote>
+<p>ES6 引入 rest 参数（形式为…变量名），用于获取函数的多余参数，这样就不需要使用arguments对象了。rest 参数搭配的变量是一个数组，该变量将多余的参数放入数组中。<br>rest 参数之后不能再有其他参数（即只能是最后一个参数），否则会报错。</p>
+</blockquote>
+<h2 id="尾调用"><a href="#尾调用" class="headerlink" title="尾调用"></a>尾调用</h2><blockquote>
+<p>尾调用：某个函数的最后一步是调用另一个函数。</p>
+</blockquote>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title">f</span>(x)&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="type">g(x)</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">以下不属于尾调用：</span><br><span class="line"><span class="keyword">function</span> <span class="title">f</span>(x)&#123;</span><br><span class="line">  let y = g(x);</span><br><span class="line">  <span class="keyword">return</span> y;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title">f</span>(x)&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="type">g(x)</span> + <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title">f</span>(x)&#123;</span><br><span class="line">  g(x);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="尾调用优化"><a href="#尾调用优化" class="headerlink" title="尾调用优化"></a>尾调用优化</h2><figure class="highlight dns"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">尾调用之所以与其他调用不同，就在于它的特殊的调用位置。</span><br><span class="line">函数调用会在内存形成一个“调用记录”，又称“调用帧”（call frame），保存调用位置和内部变量等信息。如果在函数<span class="keyword">A</span>的内部调用函数B，那么在<span class="keyword">A</span>的调用帧上方，还会形成一个B的调用帧。等到B运行结束，将结果返回到<span class="keyword">A</span>，B的调用帧才会消失。如果函数B内部还调用函数C，那就还有一个C的调用帧，以此类推。所有的调用帧，就形成一个“调用栈”（call stack）。</span><br></pre></td></tr></table></figure>
+<h2 id="尾递归"><a href="#尾递归" class="headerlink" title="尾递归"></a>尾递归</h2><blockquote>
+<p>函数调用自身，称为递归。如果尾调用自身，就称为尾递归。</p>
+</blockquote>
+<figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ES6 的尾调用优化只在严格模式下开启，正常模式是无效的。</span><br><span class="line">这是因为在正常模式下，函数内部有两个变量，可以跟踪函数的调用栈。</span><br><span class="line">	- <span class="function"><span class="keyword">func</span>.<span class="title">arguments</span>：返回调用时函数的参数。</span></span><br><span class="line">	- <span class="function"><span class="keyword">func</span>.<span class="title">caller</span>：返回调用当前函数的那个函数。</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+          
+            <a href="/tags/es6/" rel="tag"># es6</a>
+          
+            <a href="/tags/Function/" rel="tag"># Function</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/02/11/数组基础/" rel="next" title="数组基础">
+                <i class="fa fa-chevron-left"></i> 数组基础
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/11/字符串方法/" rel="prev" title="字符串方法">
+                字符串方法 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/head.png"
+                alt="Juphy" />
+            
+              <p class="site-author-name" itemprop="name">Juphy</p>
+              <p class="site-description motion-element" itemprop="description">挽留天涯挽留人,挽留岁月挽留你。它就是挽留,我就是使挽留的人,只看谁是要被挽留。</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">分类</span>
+                  
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">标签</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#参数默认值"><span class="nav-number">1.</span> <span class="nav-text">参数默认值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#与解构赋值默认值结合使用"><span class="nav-number">2.</span> <span class="nav-text">与解构赋值默认值结合使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参数默认值的位置"><span class="nav-number">3.</span> <span class="nav-text">参数默认值的位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数的length属性"><span class="nav-number">4.</span> <span class="nav-text">函数的length属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作用域"><span class="nav-number">5.</span> <span class="nav-text">作用域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#rest参数"><span class="nav-number">6.</span> <span class="nav-text">rest参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#尾调用"><span class="nav-number">7.</span> <span class="nav-text">尾调用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#尾调用优化"><span class="nav-number">8.</span> <span class="nav-text">尾调用优化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#尾递归"><span class="nav-number">9.</span> <span class="nav-text">尾递归</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Juphy</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.3.0</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=65897563";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  
+  
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(function (item) {
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'Ld534hVQrPScL0zAhVHDC0Cp-gzGzoHsz',
+        appKey: 'f5OLYN4RbCy9k4MPW8tKXDbW',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
