@@ -108,18 +108,18 @@
 
 
 
-  <meta name="description" content="数组基础内容">
+  <meta name="description" content="除了 Object 之外， Array 类型恐怕是 ECMAScript 中最常用的类型了。而且，ECMAScript 中的数组与其他多数语言中的数组有着相当大的区别。虽然 ECMAScript 数组与其他语言中的数组都是数据的有序列表，但与其他语言不同的是，ECMAScript 数组的每一项可以保存任何类型的数据。也就是说，可以用数组的第一个位置来保存字符串，用第二位置来保存数值，用第三个位置">
 <meta name="keywords" content="JavaScript,Array">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数组基础">
 <meta property="og:url" content="https://blog.juphy.com/2017/02/11/数组基础/index.html">
 <meta property="og:site_name" content="挽留之王小石">
-<meta property="og:description" content="数组基础内容">
+<meta property="og:description" content="除了 Object 之外， Array 类型恐怕是 ECMAScript 中最常用的类型了。而且，ECMAScript 中的数组与其他多数语言中的数组有着相当大的区别。虽然 ECMAScript 数组与其他语言中的数组都是数据的有序列表，但与其他语言不同的是，ECMAScript 数组的每一项可以保存任何类型的数据。也就是说，可以用数组的第一个位置来保存字符串，用第二位置来保存数值，用第三个位置">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-06-18T17:21:16.872Z">
+<meta property="og:updated_time" content="2018-06-19T17:44:24.781Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数组基础">
-<meta name="twitter:description" content="数组基础内容">
+<meta name="twitter:description" content="除了 Object 之外， Array 类型恐怕是 ECMAScript 中最常用的类型了。而且，ECMAScript 中的数组与其他多数语言中的数组有着相当大的区别。虽然 ECMAScript 数组与其他语言中的数组都是数据的有序列表，但与其他语言不同的是，ECMAScript 数组的每一项可以保存任何类型的数据。也就是说，可以用数组的第一个位置来保存字符串，用第二位置来保存数值，用第三个位置">
 
 
 
@@ -363,7 +363,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-06-19 01:21:16" itemprop="dateModified" datetime="2018-06-19T01:21:16+08:00">2018-06-19</time>
+                <time title="修改时间：2018-06-20 01:44:24" itemprop="dateModified" datetime="2018-06-20T01:44:24+08:00">2018-06-20</time>
               
             
           </span>
@@ -404,6 +404,17 @@
 
           
           
+             <span id="/2017/02/11/数组基础/" class="leancloud_visitors" data-flag-title="数组基础">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
             <span class="post-meta-divider">|</span>
@@ -417,8 +428,6 @@
 
           
 
-          
-              <div class="post-description">数组基础内容</div>
           
 
         </div>
@@ -437,7 +446,7 @@
         <blockquote>
 <p>除了 Object 之外， Array 类型恐怕是 ECMAScript 中最常用的类型了。而且，ECMAScript 中的数组与其他多数语言中的数组有着相当大的区别。虽然 ECMAScript 数组与其他语言中的数组都是数据的有序列表，但与其他语言不同的是，ECMAScript 数组的每一项可以保存任何类型的数据。也就是说，可以用数组的第一个位置来保存字符串，用第二位置来保存数值，用第三个位置来保存对象，以此类推。而且，ECMAScript 数组的大小是可以动态调整的，即可以随着数据的添加自动增长以容纳新增数据。</p>
 </blockquote>
-<h2 id="一、数组的定义"><a href="#一、数组的定义" class="headerlink" title="一、数组的定义"></a>一、数组的定义</h2><ul>
+<h2 id="数组的定义"><a href="#数组的定义" class="headerlink" title="数组的定义"></a>数组的定义</h2><ul>
 <li><p>构造函数模式</p>
 <p>  var colors = new Array(“red”, “blue”, “green”); //创建一个包含 3 项，即字符串red”, “blue”, “green”的数组<br>  var colors = new Array(3); // 创建一个包含 3 项的数组，实际项目中，很少有人这么写；<br>  var colors = Array(“red”, “blue”, “green”); //构造函数的new是可以省略的；</p>
 </li>
@@ -454,7 +463,7 @@
 console.log(colors[0]); // 显示第一项,可以思考下，如果访问的索引超过数组长度呢？会返回什么
 colors[2] = &quot;black&quot;; // 修改第三项
 colors[3] = &quot;brown&quot;; // 新增第四项,如果设置某个值的索引超过了数组现有项数,数组就会自动增加到该索引值加 1 的长度（就这个例子而言，索引是 3，因此数组长度就是 4）
-</code></pre><h2 id="二、数组的length属性"><a href="#二、数组的length属性" class="headerlink" title="二、数组的length属性"></a>二、数组的length属性</h2><p>数组的项数保存在其 length 属性中，这个属性始终会返回 0 或更大的值，如下面这个例子所示：</p>
+</code></pre><h2 id="数组的length属性"><a href="#数组的length属性" class="headerlink" title="数组的length属性"></a>数组的length属性</h2><p>数组的项数保存在其 length 属性中，这个属性始终会返回 0 或更大的值，如下面这个例子所示：</p>
 <pre><code>var colors = [&quot;red&quot;, &quot;blue&quot;, &quot;green&quot;]; // 创建一个包含 3 个字符串的数组
 var names = []; // 创建一个空数组
 console.log(colors.length); //3
@@ -474,10 +483,10 @@ console.log(names.length); //0
 <p>获取或者修改数组的长度，例如：ary.length = ary.length-1就是删除数组的最后一项；数组中的splice相对来说实现删除的时候，每删除一项后面的索引都需要重新的计算，比较耗费性能，如果要删除数组中所谓为n这一项，我们可以这样去写：</p>
 <pre><code>ary[n]=ary[ary.length-1];//首先把数组的最后一项替换当前的项
 ary.length=ary.length-1;//然后在删除数组的最后一项
-</code></pre><h2 id="三、数组的使用"><a href="#三、数组的使用" class="headerlink" title="三、数组的使用"></a>三、数组的使用</h2><ul>
+</code></pre><h2 id="数组的使用"><a href="#数组的使用" class="headerlink" title="数组的使用"></a>数组的使用</h2><ul>
 <li>array[index] ;直接数组后面跟[索引]即可；</li>
 </ul>
-<h2 id="四、数组的方法"><a href="#四、数组的方法" class="headerlink" title="四、数组的方法"></a>四、数组的方法</h2><ul>
+<h2 id="数组的方法"><a href="#数组的方法" class="headerlink" title="数组的方法"></a>数组的方法</h2><ul>
 <li><p><code>push</code> 向数组末尾增加新元素，返回新增后数组的长度，原有的数组改变；</p>
 <pre><code>var ary=[];
 ary.push(12);
@@ -579,12 +588,6 @@ ary.unshift(12);
 
 
     <div class="post-spread">
-      
-        
-<script>
-  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
-</script>
-
       
     </div>
   </div>
@@ -732,7 +735,7 @@ ary.unshift(12);
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、数组的定义"><span class="nav-number">1.</span> <span class="nav-text">一、数组的定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、数组的length属性"><span class="nav-number">2.</span> <span class="nav-text">二、数组的length属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、数组的使用"><span class="nav-number">3.</span> <span class="nav-text">三、数组的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、数组的方法"><span class="nav-number">4.</span> <span class="nav-text">四、数组的方法</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数组的定义"><span class="nav-number">1.</span> <span class="nav-text">数组的定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数组的length属性"><span class="nav-number">2.</span> <span class="nav-text">数组的length属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数组的使用"><span class="nav-number">3.</span> <span class="nav-text">数组的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数组的方法"><span class="nav-number">4.</span> <span class="nav-text">数组的方法</span></a></li></ol></div>
             
 
           </div>
@@ -942,11 +945,11 @@ ary.unshift(12);
     });
     new Valine({
         el: '#comments' ,
-        verify: false,
-        notify: false,
+        verify: true,
+        notify: true,
         appId: 'Ld534hVQrPScL0zAhVHDC0Cp-gzGzoHsz',
         appKey: 'f5OLYN4RbCy9k4MPW8tKXDbW',
-        placeholder: 'Just go go',
+        placeholder: '快去抢沙发吧！！！',
         avatar:'mm',
         guest_info:guest,
         pageSize:'10' || 10,
@@ -962,6 +965,102 @@ ary.unshift(12);
 
 
   
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("Ld534hVQrPScL0zAhVHDC0Cp-gzGzoHsz", "f5OLYN4RbCy9k4MPW8tKXDbW");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            
+            counter.save(null, {
+              success: function(counter) {
+                
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(counter.get('time'));
+                
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! See more at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see here how to solve it: https://github.com/theme-next/hexo-leancloud-counter-security. \n But you also can use LeanCloud without security, by set \'security\' option to \'false\'.');
+            
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 
