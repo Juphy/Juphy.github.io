@@ -112,25 +112,25 @@
 
 
 
-  <meta name="description" content="在centos7中通过两种不同的方式安装nginx。">
-<meta name="keywords" content="linux">
+  <meta name="description" content="es6中有关Object的方法和属性。">
+<meta name="keywords" content="ES6,Object">
 <meta property="og:type" content="article">
-<meta property="og:title" content="centos7安装nginx">
-<meta property="og:url" content="https://blog.juphy.com/2018/06/16/centos7安装nginx/index.html">
+<meta property="og:title" content="对象方法">
+<meta property="og:url" content="https://blog.juphy.com/对象方法/index.html">
 <meta property="og:site_name" content="挽留之王小石">
-<meta property="og:description" content="在centos7中通过两种不同的方式安装nginx。">
+<meta property="og:description" content="es6中有关Object的方法和属性。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-06-20T02:51:43.850Z">
+<meta property="og:updated_time" content="2018-06-20T03:33:21.203Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="centos7安装nginx">
-<meta name="twitter:description" content="在centos7中通过两种不同的方式安装nginx。">
+<meta name="twitter:title" content="对象方法">
+<meta name="twitter:description" content="es6中有关Object的方法和属性。">
 
 
 
 
 
 
-  <link rel="canonical" href="https://blog.juphy.com/2018/06/16/centos7安装nginx/"/>
+  <link rel="canonical" href="https://blog.juphy.com/对象方法/"/>
 
 
 
@@ -140,7 +140,7 @@
   };
 </script>
 
-  <title>centos7安装nginx | 挽留之王小石</title>
+  <title>对象方法 | 挽留之王小石</title>
   
 
 
@@ -308,7 +308,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.juphy.com/2018/06/16/centos7安装nginx/">
+    <link itemprop="mainEntityOfPage" href="https://blog.juphy.com/对象方法/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Juphy">
@@ -325,7 +325,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">centos7安装nginx
+          <h1 class="post-title" itemprop="name headline">对象方法
               
             
           </h1>
@@ -350,7 +350,7 @@
                 
               
 
-              <time title="创建时间：2018-06-16 00:00:00" itemprop="dateCreated datePublished" datetime="2018-06-16T00:00:00+08:00">2018-06-16</time>
+              <time title="创建时间：2018-03-18 00:00:00" itemprop="dateCreated datePublished" datetime="2018-03-18T00:00:00+08:00">2018-03-18</time>
             
 
             
@@ -367,7 +367,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-06-20 10:51:43" itemprop="dateModified" datetime="2018-06-20T10:51:43+08:00">2018-06-20</time>
+                <time title="修改时间：2018-06-20 11:33:21" itemprop="dateModified" datetime="2018-06-20T11:33:21+08:00">2018-06-20</time>
               
             
           </span>
@@ -399,8 +399,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/06/16/centos7安装nginx/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/2018/06/16/centos7安装nginx/" itemprop="commentsCount"></span>
+                <a href="/对象方法/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/对象方法/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -408,7 +408,7 @@
 
           
           
-             <span id="/2018/06/16/centos7安装nginx/" class="leancloud_visitors" data-flag-title="centos7安装nginx">
+             <span id="/对象方法/" class="leancloud_visitors" data-flag-title="对象方法">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -425,7 +425,7 @@
           
 
           
-              <div class="post-description">在centos7中通过两种不同的方式安装nginx。</div>
+              <div class="post-description">es6中有关Object的方法和属性。</div>
           
 
         </div>
@@ -441,47 +441,57 @@
       
 
       
-        <h2 id="通过yum安装"><a href="#通过yum安装" class="headerlink" title="通过yum安装"></a>通过yum安装</h2><blockquote>
-<p>直接通过 yum install nginx 肯定是不行的,因为yum没有nginx，所以首先把 nginx 的源加入 yum 中。</p>
-</blockquote>
+        <h2 id="属性的简洁表示法"><a href="#属性的简洁表示法" class="headerlink" title="属性的简洁表示法"></a>属性的简洁表示法</h2><p><em>ES6允许直接写入变量和函数，最为对象的属性和方法。</em></p>
 <ul>
-<li><p>将nginx放到yum repro库中</p>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -ivh http:<span class="regexp">//</span>nginx.org<span class="regexp">/packages/</span>centos<span class="regexp">/7/</span>noarch<span class="regexp">/RPMS/</span>nginx-release-centos-<span class="number">7</span>-<span class="number">0</span>.el7.ngx.noarch.rpm</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看nginx信息</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">yum</span> <span class="literal">info</span> nginx</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>使用yum安装nginx</p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum <span class="keyword">install</span> nginx</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>启动nginx</p>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service nginx <span class="literal">start</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看nginx版本</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">nginx -v</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>访问nginx，查看nginx服务返回的信息</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -<span class="selector-tag">i</span> 公网IP</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>nginx -t：测试配置文件的语法，配置文件是否写得正确，以及配置文件得路径</p>
-</li>
-<li><p>找到nginx文件路径</p>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ps</span> aux | <span class="keyword">grep</span> nginx</span><br></pre></td></tr></table></figure>
+<li>name：返回函数名 。</li>
+<li>Object.is()：用来比较两个值是否严格相等，与严格比较运算符（===）的行为基本一致。不同之处只有两个：一是+0不等于-0，二是NaN等于自身。</li>
+<li>Object.assign()：用于对象的合并，将原对象的所有可枚举属性，赋值到目标对象。第一个参数是目标对象，后面的参数都是源对象。如果目标对象与源对象有同名属性，或多个源对象有同名属性，则后面的属性会覆盖前面的属性。<figure class="highlight llvm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var <span class="keyword">target</span>=&#123;a:<span class="number">1</span>&#125;<span class="comment">;</span></span><br><span class="line"><span class="comment">var target1=&#123;b:2&#125;;</span></span><br><span class="line"><span class="comment">var target2=&#123;c:3&#125;;</span></span><br><span class="line"><span class="comment">Object.assign(target,target1,target2)</span></span><br><span class="line"><span class="comment">target // &#123;a:1,b:2,c:3&#125;</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="手动下载安装包"><a href="#手动下载安装包" class="headerlink" title="手动下载安装包"></a>手动下载安装包</h2><ul>
-<li><p>1、下载nginx包</p>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http:<span class="regexp">//</span>nginx.org<span class="regexp">/download/</span>nginx-<span class="number">1.10</span>.<span class="number">1</span>.tar.gz</span><br></pre></td></tr></table></figure>
+<p>如果该参数不是对象，则会先转成对象，然后返回。由于undefined和null无法转成对象，所以如果它们作为参数，就会报错。</p>
+<p>如果非对象参数出现在源对象的位置（即非首参数），那么处理规则有所不同。首先，这些参数都会转成对象，如果无法转成对象，就会跳过。这意味着，如果undefined和null不在首参数，就不会报错。</p>
+<p>其他类型的值（即数值、字符串和布尔值）不在首参数，也不会报错。但是，除了字符串会以数组形式，拷贝入目标对象，其他值都不会产生效果。</p>
+<ul>
+<li><p>Object.assign拷贝的属性是有限制的，只拷贝源对象的自身属性（不拷贝自身属性），也不拷贝不可枚举的属性（enumerable:false）。</p>
+<ul>
+<li>1、实行的是浅拷贝，而不是深拷贝。也就是说，如果源对象某个属性的值是对象，那么目标对象拷贝得到的是这个对象的引用。</li>
+<li>2、同名属性替换</li>
+<li><p>3、数组的处理：但是会把数组视为对象。</p>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Object.assign([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], [<span class="number">4</span>, <span class="number">5</span>])</span><br><span class="line"><span class="comment">// [4, 5, 3]</span></span><br></pre></td></tr></table></figure>
 </li>
-<li><p>2、复制包到安装目录</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp nginx-<span class="number">1.10</span>.<span class="number">1</span><span class="selector-class">.tar</span><span class="selector-class">.gz</span> /usr/loca</span><br></pre></td></tr></table></figure>
+<li><p>4、取值函数的处理：Object.assign只能进行值的复制，如果要复制的值是一个取值函数，那么将求值后再复制。</p>
+<figure class="highlight aspectj"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> source = &#123;</span><br><span class="line">  <span class="function">get <span class="title">foo</span><span class="params">()</span> </span>&#123; <span class="keyword">return</span> <span class="number">1</span> &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">target</span> = &#123;&#125;;</span><br><span class="line">Object.assign(<span class="keyword">target</span>, source)</span><br><span class="line"><span class="comment">// &#123; foo: 1 &#125;</span></span><br></pre></td></tr></table></figure>
 </li>
-<li><p>3、解压</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">tar</span> <span class="selector-tag">-zxvf</span> <span class="selector-tag">nginx-1</span><span class="selector-class">.10</span><span class="selector-class">.1</span><span class="selector-class">.tar</span><span class="selector-class">.gz</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>4、启动nginx</p>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="regexp">/usr/</span>local<span class="regexp">/nginx/</span>sbin<span class="regexp">/nginx</span></span><br></pre></td></tr></table></figure></li>
 </ul>
+</li>
+</ul>
+<h2 id="可枚举性"><a href="#可枚举性" class="headerlink" title="可枚举性"></a>可枚举性</h2><p>描述对象的enumerable属性，称为“可枚举性”，如果该属性为false，就表示某些操作会忽略当前属性。</p>
+<p>目前，有四个操作会忽略enumerable为false的属性。</p>
+<ul>
+<li>for…in循环：只遍历对象自身的和继承的可枚举的属性。</li>
+<li>Object.keys()：返回对象自身的所有可枚举的属性的键名。</li>
+<li>JSON.stringify()：只串行化对象自身的可枚举的属性。</li>
+<li>Object.assign()： 忽略enumerable为false的属性，只拷贝对象自身的可枚举的属性。</li>
+</ul>
+<h2 id="属性的遍历"><a href="#属性的遍历" class="headerlink" title="属性的遍历"></a>属性的遍历</h2><ul>
+<li>ES6 一共有 5 种方法可以遍历对象的属性。<ul>
+<li>（1）for…in：for…in循环遍历对象自身的和继承的可枚举属性（不含 Symbol 属性）。</li>
+<li>（2）Object.keys(obj)：Object.keys返回一个数组，包括对象自身的（不含继承的）所有可枚举属性（不含 Symbol 属性）的键名。<br>-（3）Object.getOwnPropertyNames(obj)：Object.getOwnPropertyNames返回一个数组，包含对象自身的所有属性（不含 Symbol 属性，但是包括不可枚举属性）的键名。<br>-（4）Object.getOwnPropertySymbols(obj)：Object.getOwnPropertySymbols返回一个数组，包含对象自身的所有 Symbol 属性的键名。<br>-（5）Reflect.ownKeys(obj)：Reflect.ownKeys返回一个数组，包含对象自身的所有键名，不管键名是 Symbol 或字符串，也不管是否可枚举。</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>以上的 5 种方法遍历对象的键名，都遵守同样的属性遍历的次序规则。</p>
+</blockquote>
+<blockquote>
+<p>首先遍历所有数值键，按照数值升序排列。</p>
+</blockquote>
+<blockquote>
+<p>其次遍历所有字符串键，按照加入时间升序排列。</p>
+</blockquote>
+<blockquote>
+<p>最后遍历所有 Symbol 键，按照加入时间升序排列。</p>
+</blockquote>
 
       
     </div>
@@ -502,7 +512,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/linux/" rel="tag"># linux</a>
+            <a href="/tags/ES6/" rel="tag"># ES6</a>
+          
+            <a href="/tags/Object/" rel="tag"># Object</a>
           
         </div>
       
@@ -515,8 +527,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/06/15/姿三四郎/" rel="next" title="姿三四郎">
-                <i class="fa fa-chevron-left"></i> 姿三四郎
+              <a href="/字符串方法/" rel="next" title="字符串方法">
+                <i class="fa fa-chevron-left"></i> 字符串方法
               </a>
             
           </div>
@@ -525,8 +537,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/06/19/SheetJS/" rel="prev" title="SheetJS">
-                SheetJS <i class="fa fa-chevron-right"></i>
+              <a href="/数值方法/" rel="prev" title="数值方法">
+                数值方法 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -633,11 +645,7 @@
                     
                       
                     
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-count">1</span>
                     <span class="site-state-item-name">分类</span>
                   
                 </div>
@@ -668,13 +676,7 @@
                     
                       
                     
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">12</span>
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">标签</span>
                   
                 </div>
@@ -710,7 +712,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#通过yum安装"><span class="nav-number">1.</span> <span class="nav-text">通过yum安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#手动下载安装包"><span class="nav-number">2.</span> <span class="nav-text">手动下载安装包</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#属性的简洁表示法"><span class="nav-number">1.</span> <span class="nav-text">属性的简洁表示法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#可枚举性"><span class="nav-number">2.</span> <span class="nav-text">可枚举性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#属性的遍历"><span class="nav-number">3.</span> <span class="nav-text">属性的遍历</span></a></li></ol></div>
             
 
           </div>
