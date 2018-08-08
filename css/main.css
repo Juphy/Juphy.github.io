@@ -1894,14 +1894,14 @@ img:hover {
 }
 .links-of-author a:before,
 .links-of-author .exturl:before {
-  display: inline-block;
+  display: none;
   vertical-align: middle;
   margin-right: 3px;
   content: " ";
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #cbb6ff;
+  background: #ffc342;
 }
 .links-of-blogroll {
   font-size: 13px;
