@@ -1901,7 +1901,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffc342;
+  background: #ff9d20;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2668,7 +2668,7 @@ embed {
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
 }
-body {
+#main {
   background: url("https://source.unsplash.com/random/1600x900");
   background-repeat: no-repeat;
   background-size: cover;
@@ -2678,8 +2678,6 @@ body {
   background-position: 50% 50%;
 }
 .main-inner {
-  margin-top: 60px;
-  padding: 60px 60px 60px 60px;
   background: #fff;
   opacity: 0.9;
   min-height: 500px;
@@ -2701,9 +2699,25 @@ pre {
   border: 1px solid #d6d6d6;
 }
 .post {
-  margin-top: 60px;
   margin-bottom: 60px;
   padding: 25px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+.post-expand {
+  padding-top: 0;
+}
+.post-footer {
+  display: none;
+}
+#header {
+  position: relative;
+}
+#canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
 }
