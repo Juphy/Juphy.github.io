@@ -1331,7 +1331,7 @@ pre .javascript .function {
 }
 @media (max-width: 767px) {
   .posts-expand {
-    margin: 0 20px;
+    margin: 0;
   }
   .post-body pre .gutter pre {
     padding-right: 10px;
@@ -1901,7 +1901,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffe586;
+  background: #ffb42d;
 }
 .links-of-blogroll {
   font-size: 13px;
