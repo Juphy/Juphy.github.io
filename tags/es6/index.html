@@ -1005,7 +1005,7 @@
         canvas.width = screen.width;
         canvas.height = screen.height;
         var num = parseInt(screen.width * screen.height / 100000);
-        if (num < 24) num = 24;
+        if (num < 16) num = 16;
         balls = [];
         for (var i = 0; i < num; i++) {
             var opacity = 0.06 + Math.random() * 0.16;
