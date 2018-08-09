@@ -1901,7 +1901,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff9d20;
+  background: #ffb8cd;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2669,7 +2669,7 @@ embed {
   display: inline-block;
 }
 #main {
-  background: url("https://source.unsplash.com/random/1600x900");
+  background: url("https://api.dujin.org/bing/1920.php");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
