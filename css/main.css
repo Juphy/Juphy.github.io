@@ -458,7 +458,8 @@ body {
   }
 }
 .main {
-  padding-bottom: 150px;
+  padding-bottom: 80px;
+  padding-top: 60px;
 }
 .main-inner {
   margin: 0 auto;
@@ -1901,7 +1902,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #3b14ff;
+  background: #ff1401;
 }
 .links-of-blogroll {
   font-size: 13px;
