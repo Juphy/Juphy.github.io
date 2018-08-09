@@ -458,7 +458,7 @@ body {
   }
 }
 .main {
-  padding-bottom: 80px;
+  padding-bottom: 116px;
   padding-top: 60px;
 }
 .main-inner {
@@ -486,6 +486,7 @@ body {
   box-sizing: border-box;
   margin: 20px auto;
   width: 700px;
+  margin-top: 0;
 }
 @media (min-width: 1200px) {
   .container .footer-inner {
@@ -1902,7 +1903,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2d29be;
+  background: #ffffa2;
 }
 .links-of-blogroll {
   font-size: 13px;
