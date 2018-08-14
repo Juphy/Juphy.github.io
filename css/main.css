@@ -1903,7 +1903,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #407777;
+  background: #f03cc7;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2681,7 +2681,7 @@ body {
   background-position: 50% 50%;
 }
 .main-inner {
-  opacity: 0.85;
+  opacity: 0.9;
   min-height: 500px;
 }
 code {
@@ -2735,6 +2735,9 @@ pre {
   color: #000;
 }
 #comments {
-  padding: 20px;
+  padding: 25px;
   background: #fff;
+}
+.container {
+  background: transparent;
 }
