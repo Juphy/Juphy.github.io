@@ -1903,7 +1903,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffdac3;
+  background: #37ff77;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2672,7 +2672,7 @@ embed {
 }
 body {
   background: url("https://api.yingjoy.cn/pic/?t=random&w=1920");
-  background: url("https://uploadbeta.com/api/pictures/random/?cached&key=BingEverydayWallpaperPicture");
+  background: url("https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
