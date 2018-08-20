@@ -169,14 +169,14 @@
   <meta name="description" content="eventproxy 控制并发如果并发异步获取两三个地址的数据，并且要在获取到数据之后，对这些数据一起进行利用的话，常规的写法是自己维护一个计数器。\先定义一个 var count = 0，然后每次抓取成功以后，就 count++。如果你是要抓取三个源的数据，由于你根本不知道这些异步操作到底谁先完成，那么每次当抓取成功的时候，就判断一下 count === 3。当值为真时，使用另一个函数继续完成操">
 <meta name="keywords" content="nodejs">
 <meta property="og:type" content="article">
-<meta property="og:title" content="nodejs获取请求参数的方式">
+<meta property="og:title" content="nodejs控制异步并发">
 <meta property="og:url" content="http://blog.juphy.com/2018/08/20/nodejs控制异步并发/index.html">
 <meta property="og:site_name" content="挽留之王小石">
 <meta property="og:description" content="eventproxy 控制并发如果并发异步获取两三个地址的数据，并且要在获取到数据之后，对这些数据一起进行利用的话，常规的写法是自己维护一个计数器。\先定义一个 var count = 0，然后每次抓取成功以后，就 count++。如果你是要抓取三个源的数据，由于你根本不知道这些异步操作到底谁先完成，那么每次当抓取成功的时候，就判断一下 count === 3。当值为真时，使用另一个函数继续完成操">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-20T07:26:21.978Z">
+<meta property="og:updated_time" content="2018-08-20T07:28:33.558Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="nodejs获取请求参数的方式">
+<meta name="twitter:title" content="nodejs控制异步并发">
 <meta name="twitter:description" content="eventproxy 控制并发如果并发异步获取两三个地址的数据，并且要在获取到数据之后，对这些数据一起进行利用的话，常规的写法是自己维护一个计数器。\先定义一个 var count = 0，然后每次抓取成功以后，就 count++。如果你是要抓取三个源的数据，由于你根本不知道这些异步操作到底谁先完成，那么每次当抓取成功的时候，就判断一下 count === 3。当值为真时，使用另一个函数继续完成操">
 
 
@@ -196,7 +196,7 @@
   };
 </script>
 
-  <title>nodejs获取请求参数的方式 | 挽留之王小石</title>
+  <title>nodejs控制异步并发 | 挽留之王小石</title>
   
 
 
@@ -406,7 +406,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">nodejs获取请求参数的方式
+          <h1 class="post-title" itemprop="name headline">nodejs控制异步并发
               
             
           </h1>
@@ -431,7 +431,7 @@
                 
               
 
-              <time title="创建时间：2018-08-20 15:26:00 / 修改时间：15:26:21" itemprop="dateCreated datePublished" datetime="2018-08-20T15:26:00+08:00">2018-08-20</time>
+              <time title="创建时间：2018-08-20 15:26:00 / 修改时间：15:28:33" itemprop="dateCreated datePublished" datetime="2018-08-20T15:26:00+08:00">2018-08-20</time>
             
 
             
@@ -533,7 +533,7 @@
     <strong>本文作者： </strong>Juphy</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://blog.juphy.com/2018/08/20/nodejs控制异步并发/" title="nodejs获取请求参数的方式">http://blog.juphy.com/2018/08/20/nodejs控制异步并发/</a>
+    <a href="http://blog.juphy.com/2018/08/20/nodejs控制异步并发/" title="nodejs控制异步并发">http://blog.juphy.com/2018/08/20/nodejs控制异步并发/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
