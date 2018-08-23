@@ -1903,7 +1903,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff81ff;
+  background: #ba58f6;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2717,9 +2717,10 @@ pre {
 #header {
   position: relative;
   opacity: 0.85;
-  background: #fff;
+  background: rgba(82,168,236,0.6) url("images/header_bg.png");
 }
 #canvas {
+  display: none;
   position: absolute;
   left: 0;
   top: 0;
