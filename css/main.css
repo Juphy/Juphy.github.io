@@ -1903,7 +1903,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffa28e;
+  background: #fffa14;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2740,4 +2740,15 @@ pre {
 }
 .container {
   background: transparent;
+}
+.posts-collapse::after {
+  bottom: 0px;
+  height: auto;
+}
+.page-archive .archive-page-counter {
+  color: #000;
+  display: none;
+}
+.archive-year {
+  color: #000;
 }
