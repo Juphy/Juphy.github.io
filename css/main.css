@@ -1903,7 +1903,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff300a;
+  background: #f9f;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2751,4 +2751,7 @@ pre {
 }
 .archive-year {
   color: #000;
+}
+.category-all-page .category-all {
+  padding: 0 36px;
 }
