@@ -170,7 +170,7 @@
 <meta name="keywords" content="eventproxy,async">
 <meta property="og:type" content="article">
 <meta property="og:title" content="nodejs控制异步并发">
-<meta property="og:url" content="http://blog.juphy.com/2018/08/20/nodejs控制异步并发/index.html">
+<meta property="og:url" content="http://blog.juphy.cn/2018/08/20/nodejs控制异步并发/index.html">
 <meta property="og:site_name" content="挽留之王小石">
 <meta property="og:description" content="eventproxy 控制并发如果并发异步获取两三个地址的数据，并且要在获取到数据之后，对这些数据一起进行利用的话，常规的写法是自己维护一个计数器。\先定义一个 var count = 0，然后每次抓取成功以后，就 count++。如果你是要抓取三个源的数据，由于你根本不知道这些异步操作到底谁先完成，那么每次当抓取成功的时候，就判断一下 count === 3。当值为真时，使用另一个函数继续完成操">
 <meta property="og:locale" content="zh-CN">
@@ -186,7 +186,7 @@
 
 
 
-  <link rel="canonical" href="http://blog.juphy.com/2018/08/20/nodejs控制异步并发/"/>
+  <link rel="canonical" href="http://blog.juphy.cn/2018/08/20/nodejs控制异步并发/"/>
 
 
 
@@ -381,7 +381,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.juphy.com/2018/08/20/nodejs控制异步并发/">
+    <link itemprop="mainEntityOfPage" href="http://blog.juphy.cn/2018/08/20/nodejs控制异步并发/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Juphy">
@@ -537,7 +537,7 @@
     <strong>本文作者： </strong>Juphy</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://blog.juphy.com/2018/08/20/nodejs控制异步并发/" title="nodejs控制异步并发">http://blog.juphy.com/2018/08/20/nodejs控制异步并发/</a>
+    <a href="http://blog.juphy.cn/2018/08/20/nodejs控制异步并发/" title="nodejs控制异步并发">http://blog.juphy.cn/2018/08/20/nodejs控制异步并发/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
@@ -1043,6 +1043,21 @@
   
 
   
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 
   
   
