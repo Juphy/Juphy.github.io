@@ -18,6 +18,7 @@
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="baidu-site-verification" content="GdjCeo8WaE" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="#222">
 <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
@@ -166,18 +167,18 @@
 
 
 
-  <meta name="description" content="TypeScript模块系统模块是指在其自身作用域里执行，而不是在全局作用域里；模块间是依靠 export 和 import 建立关系。编译器在编译过程中，也是依赖这种关系来定位需要编译的文件。 TypeScript 依然还是以 JavaScript 文件的形式发布类库，这会导致类型无法表述，需要配合声明文件对其进行类型描述；因此声明文件成了类库一个必不可少的组成部分。 分类有声明文件要分清类库是">
-<meta name="keywords" content="Angular,TypeScript">
+  <meta name="description" content="process.cwd()获取node命令启动路径，其值与代码所在位置无关，即运行node命令时所在的文件夹的绝对路径。 File System模块使用相对路径读写文件时，参考的就是这个路径。适用于开发命令行程序时，读取命令启动位置目录的文件。 __dirname被执行的js所在的文件夹的绝对路径 __filename被执行的js的绝对路径 require()只有在require时才使用相对路径(">
+<meta name="keywords" content="path">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Angular如何使用第三方库">
-<meta property="og:url" content="http://blog.juphy.cn/2018/05/31/Angular如何使用第三方库/index.html">
+<meta property="og:title" content="nodejs文件路径问题">
+<meta property="og:url" content="http://blog.juphy.cn/blogs/a549916c.html">
 <meta property="og:site_name" content="挽留之王小石">
-<meta property="og:description" content="TypeScript模块系统模块是指在其自身作用域里执行，而不是在全局作用域里；模块间是依靠 export 和 import 建立关系。编译器在编译过程中，也是依赖这种关系来定位需要编译的文件。 TypeScript 依然还是以 JavaScript 文件的形式发布类库，这会导致类型无法表述，需要配合声明文件对其进行类型描述；因此声明文件成了类库一个必不可少的组成部分。 分类有声明文件要分清类库是">
+<meta property="og:description" content="process.cwd()获取node命令启动路径，其值与代码所在位置无关，即运行node命令时所在的文件夹的绝对路径。 File System模块使用相对路径读写文件时，参考的就是这个路径。适用于开发命令行程序时，读取命令启动位置目录的文件。 __dirname被执行的js所在的文件夹的绝对路径 __filename被执行的js的绝对路径 require()只有在require时才使用相对路径(">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-09T06:46:38.243Z">
+<meta property="og:updated_time" content="2018-08-29T10:27:48.093Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Angular如何使用第三方库">
-<meta name="twitter:description" content="TypeScript模块系统模块是指在其自身作用域里执行，而不是在全局作用域里；模块间是依靠 export 和 import 建立关系。编译器在编译过程中，也是依赖这种关系来定位需要编译的文件。 TypeScript 依然还是以 JavaScript 文件的形式发布类库，这会导致类型无法表述，需要配合声明文件对其进行类型描述；因此声明文件成了类库一个必不可少的组成部分。 分类有声明文件要分清类库是">
+<meta name="twitter:title" content="nodejs文件路径问题">
+<meta name="twitter:description" content="process.cwd()获取node命令启动路径，其值与代码所在位置无关，即运行node命令时所在的文件夹的绝对路径。 File System模块使用相对路径读写文件时，参考的就是这个路径。适用于开发命令行程序时，读取命令启动位置目录的文件。 __dirname被执行的js所在的文件夹的绝对路径 __filename被执行的js的绝对路径 require()只有在require时才使用相对路径(">
 
 
 
@@ -186,7 +187,7 @@
 
 
 
-  <link rel="canonical" href="http://blog.juphy.cn/2018/05/31/Angular如何使用第三方库/"/>
+  <link rel="canonical" href="http://blog.juphy.cn/blogs/a549916c.html"/>
 
 
 
@@ -196,7 +197,7 @@
   };
 </script>
 
-  <title>Angular如何使用第三方库 | 挽留之王小石</title>
+  <title>nodejs文件路径问题 | 挽留之王小石</title>
   
 
 
@@ -381,7 +382,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.juphy.cn/2018/05/31/Angular如何使用第三方库/">
+    <link itemprop="mainEntityOfPage" href="http://blog.juphy.cn/blogs/a549916c.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Juphy">
@@ -398,7 +399,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Angular如何使用第三方库
+          <h1 class="post-title" itemprop="name headline">nodejs文件路径问题
               
             
           </h1>
@@ -423,7 +424,7 @@
                 
               
 
-              <time title="创建时间：2018-05-31 14:56:00" itemprop="dateCreated datePublished" datetime="2018-05-31T14:56:00+08:00">2018-05-31</time>
+              <time title="创建时间：2018-08-28 11:22:00" itemprop="dateCreated datePublished" datetime="2018-08-28T11:22:00+08:00">2018-08-28</time>
             
 
             
@@ -440,7 +441,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-08-09 14:46:38" itemprop="dateModified" datetime="2018-08-09T14:46:38+08:00">2018-08-09</time>
+                <time title="修改时间：2018-08-29 18:27:48" itemprop="dateModified" datetime="2018-08-29T18:27:48+08:00">2018-08-29</time>
               
             
           </span>
@@ -457,7 +458,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/JavaScript/" itemprop="url" rel="index"><span itemprop="name">JavaScript</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/node/" itemprop="url" rel="index"><span itemprop="name">node</span></a></span>
 
                 
                 
@@ -472,8 +473,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/05/31/Angular如何使用第三方库/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2018/05/31/Angular如何使用第三方库/" itemprop="commentCount"></span>
+                <a href="/blogs/a549916c.html#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/blogs/a549916c.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -509,22 +510,51 @@
       
 
       
-        <h2 id="TypeScript模块系统"><a href="#TypeScript模块系统" class="headerlink" title="TypeScript模块系统"></a>TypeScript模块系统</h2><p>模块是指在其自身作用域里执行，而不是在全局作用域里；模块间是依靠 export 和 import 建立关系。编译器在编译过程中，也是依赖这种关系来定位需要编译的文件。</p>
-<p>TypeScript 依然还是以 JavaScript 文件的形式发布类库，这会导致类型无法表述，需要配合<code>声明文件</code>对其进行类型描述；因此<code>声明文件</code>成了类库一个必不可少的组成部分。</p>
-<h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><h3 id="有声明文件"><a href="#有声明文件" class="headerlink" title="有声明文件"></a>有声明文件</h3><p>要分清类库是否有声明文件 *.d.ts</p>
-<blockquote>
-<p>类库自带</p>
-</blockquote>
-<p>从 Npm 安装一个依赖包后，可以直接检查该依赖包库的 package.json 是否包含 typings 节点，该节点对应的文件就是声明文件。</p>
-<blockquote>
-<p>TypeSearch检索</p>
-</blockquote>
-<p>TypeScript 提供了一个叫 <a href="https://microsoft.github.io/TypeSearch/" target="_blank" rel="noopener">TypeSearch</a> 网站，可以直接输入关键词检查是否包含该类库的声明文件。</p>
-<h3 id="无声明文件"><a href="#无声明文件" class="headerlink" title="无声明文件"></a>无声明文件</h3><p>Angular Cli 创建的项目会包含一个 src/typings.d.ts 声明文件，它会自动包含在全局声明定义中，而把这些类库的声明信息写在这里面再好不过。</p>
-<p>一般而言自己很难对一个类库写一个完整的声明文件，这对于成本来说太不合算，因此往往都是只对部分全局对象做一个 any （表示忽略该静态类型检查）亦可，例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">declare const XLSX: any</span><br></pre></td></tr></table></figure></p>
-<h2 id="如何使用？"><a href="#如何使用？" class="headerlink" title="如何使用？"></a>如何使用？</h2><h3 id="有声明文件-1"><a href="#有声明文件-1" class="headerlink" title="有声明文件"></a>有声明文件</h3><p>对于有声明文件，无需额外做什么，只需在需要模块的地方使用 import 来导入即可。</p>
-<h3 id="无声明文件-1"><a href="#无声明文件-1" class="headerlink" title="无声明文件"></a>无声明文件</h3><p>使用 any 来表示忽略静态类型检查，意味者无法享受声明文件带来的智能提示快感，可以在项目的任意位置直接使用它，但也仅仅只能识别声明的变量，而实例的方法或属性是不可知的。</p>
-<p>除此之外 TypeScript 编译过程中也不会对 G2 做任何类型检查，G2 是否真的存在只能由自己把握。对于 Angular 而言，是需要额外在 angular.json 的 scripts 节点上明确加载这些模块。</p>
+        <h2 id="process-cwd"><a href="#process-cwd" class="headerlink" title="process.cwd()"></a>process.cwd()</h2><p>获取node命令启动路径，其值与代码所在位置无关，即<code>运行node命令时所在的文件夹的绝对路径</code>。</p>
+<p>File System模块使用相对路径读写文件时，参考的就是这个路径。适用于开发命令行程序时，读取命令启动位置目录的文件。</p>
+<h2 id="dirname"><a href="#dirname" class="headerlink" title="__dirname"></a>__dirname</h2><p>被执行的js所在的文件夹的绝对路径</p>
+<h2 id="filename"><a href="#filename" class="headerlink" title="__filename"></a>__filename</h2><p>被执行的js的绝对路径</p>
+<h2 id="require"><a href="#require" class="headerlink" title="require()"></a>require()</h2><p>只有在require时才使用相对路径(./，../)的引用方法。require的使用效果是跟__dirname的效果相同，不会因为启动脚本的目录不一样而改变。</p>
+<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">G://</span><br><span class="line">- angular/</span><br><span class="line">    - server/</span><br><span class="line">        - main.js</span><br><span class="line">        - api.js</span><br><span class="line">    - spider/</span><br><span class="line">        - mono.js</span><br><span class="line">        - one.js     </span><br><span class="line"></span><br><span class="line">运行代码：</span><br><span class="line">var path = require(&apos;path&apos;);</span><br><span class="line">console.log(__dirname);</span><br><span class="line">console.log(__filename);</span><br><span class="line">console.log(process.cwd());</span><br><span class="line">console.log(path.resolve(&apos;./&apos;));</span><br></pre></td></tr></table></figure>
+<p>以下结果都是运行main.js所得：</p>
+<ul>
+<li><p>在server文件夹下，输出结果是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">G:\angular\server</span><br><span class="line">G:\angular\server\main.js</span><br><span class="line">G:\angular\server</span><br><span class="line">G:\angular\server</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在angular文件下，输出结果是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">G:\angular\server</span><br><span class="line">G:\angular\server\main.js</span><br><span class="line">G:\angular</span><br><span class="line">G:\angular</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>获取相同目录下的其他文件</p>
+<ul>
+<li>path.join(path.dirname(__filename) + ‘/api.js’)</li>
+<li>path.resolve(__dirname + ‘/api.js’)</li>
+</ul>
+</li>
+</ul>
+<p>此时，不管是在angular文件夹下，还是server文件夹下，两者的结果都是<code>G:\angular\server\api.js</code>。</p>
+<ul>
+<li>获取相邻目录下的文件<ul>
+<li>在windows下<code>path.resolve(__dirname , &#39;../spider/mono.js</code>，两种文件夹下运行结果一致；</li>
+<li>在Linux的centos7下，两者结果不一致。angular文件夹下会报错<ul>
+<li>如果在angular文件夹下，使用<code>path.resolve(path.resolve(&#39;./&#39;) + &#39;/spider/mono.js&#39;)</code>，或者<code>path.resolve(process.cwd() + &#39;/spider/mono.js&#39;)</code>；</li>
+<li>如果在server文件夹下，使用<code>path.resolve(__dirname , &#39;../spider/mono.js&#39;)</code>; </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="path-resolve和path-join的区别"><a href="#path-resolve和path-join的区别" class="headerlink" title="path.resolve和path.join的区别"></a>path.resolve和path.join的区别</h2><ul>
+<li>path.join 全部给定的 path 片段连接到一起，并规范化生成的路径。如果<code>连接后的路径字符串</code>是一个长度为零的字符串，则代表返回 ‘.’，表示当前工作目录。不会对’/‘进行解读</li>
+<li>path.resolve 把一个路径或路径片段的序列解析为一个绝对路径，会将’/‘当成根目录。</li>
+</ul>
+<p>两者都是正常解读’..’和’.’。</p>
+<p>假设在G://angular；</p>
+<ul>
+<li>path.join(‘a’, ‘b’, ‘c’)    //  ‘a/b/c’</li>
+<li>path.join(‘a’, ‘b’, ‘..’, ‘c’)      //  ‘a/c’</li>
+<li>path.resolve(‘a’, ‘b’, ‘..’, ‘c’)       //  G://a/c</li>
+<li>path.resolve(‘/a’, ‘/b’, ‘..’, ‘c’)       //  G://c</li>
+</ul>
 
       
     </div>
@@ -546,7 +576,7 @@
     <strong>本文作者： </strong>Juphy</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://blog.juphy.cn/2018/05/31/Angular如何使用第三方库/" title="Angular如何使用第三方库">http://blog.juphy.cn/2018/05/31/Angular如何使用第三方库/</a>
+    <a href="http://blog.juphy.cn/blogs/a549916c.html" title="nodejs文件路径问题">http://blog.juphy.cn/blogs/a549916c.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
@@ -559,9 +589,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Angular/" rel="tag"><i class="fa fa-tag"></i> Angular</a>
-          
-            <a href="/tags/TypeScript/" rel="tag"><i class="fa fa-tag"></i> TypeScript</a>
+            <a href="/tags/path/" rel="tag"><i class="fa fa-tag"></i> path</a>
           
         </div>
       
@@ -574,8 +602,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/24/angular路由/" rel="next" title="Angular路由">
-                <i class="fa fa-chevron-left"></i> Angular路由
+              <a href="/blogs/664a0ac7.html" rel="next" title="python3发起http请求">
+                <i class="fa fa-chevron-left"></i> python3发起http请求
               </a>
             
           </div>
@@ -583,10 +611,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/06/06/angular的hash模式/" rel="prev" title="Angular的hash模式">
-                Angular的hash模式 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -830,7 +854,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#TypeScript模块系统"><span class="nav-number">1.</span> <span class="nav-text">TypeScript模块系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分类"><span class="nav-number">2.</span> <span class="nav-text">分类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#有声明文件"><span class="nav-number">2.1.</span> <span class="nav-text">有声明文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#无声明文件"><span class="nav-number">2.2.</span> <span class="nav-text">无声明文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何使用？"><span class="nav-number">3.</span> <span class="nav-text">如何使用？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#有声明文件-1"><span class="nav-number">3.1.</span> <span class="nav-text">有声明文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#无声明文件-1"><span class="nav-number">3.2.</span> <span class="nav-text">无声明文件</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#process-cwd"><span class="nav-number">1.</span> <span class="nav-text">process.cwd()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#dirname"><span class="nav-number">2.</span> <span class="nav-text">__dirname</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#filename"><span class="nav-number">3.</span> <span class="nav-text">__filename</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#require"><span class="nav-number">4.</span> <span class="nav-text">require()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实例"><span class="nav-number">5.</span> <span class="nav-text">实例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#path-resolve和path-join的区别"><span class="nav-number">6.</span> <span class="nav-text">path.resolve和path.join的区别</span></a></li></ol></div>
             
 
           </div>
