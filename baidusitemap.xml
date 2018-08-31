@@ -4,6 +4,48 @@
 
     
   <url>
+    <loc>http://blog.juphy.cn/blogs/46b44a0a.html</loc>
+    <lastmod>2018-08-31T05:56:23.010Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript类型转换</title>
+        <pubTime>2018-08-31T03:22:00.000Z</pubTime>
+        
+        <tag>类型转换</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="http://blog.juphy.cn/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.juphy.cn/blogs/c793072c.html</loc>
+    <lastmod>2018-08-31T05:27:29.891Z</lastmod>
+    <data>
+        <display>
+        <title>WebSocket</title>
+        <pubTime>2018-05-10T06:56:00.000Z</pubTime>
+        
+        <tag>Angular</tag>
+         
+        <tag>WebSocket</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="http://blog.juphy.cn/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.juphy.cn/blogs/a0e83b13.html</loc>
     <lastmod>2018-08-30T09:45:56.189Z</lastmod>
     <data>
@@ -32,28 +74,6 @@
         <pubTime>2018-06-20T06:56:00.000Z</pubTime>
         
         <tag>Angular</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="http://blog.juphy.cn/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.juphy.cn/blogs/c793072c.html</loc>
-    <lastmod>2018-08-30T09:45:56.185Z</lastmod>
-    <data>
-        <display>
-        <title>WebSocket</title>
-        <pubTime>2018-05-10T06:56:00.000Z</pubTime>
-        
-        <tag>Angular</tag>
-         
-        <tag>WebSocket</tag>
          
          
            
