@@ -4,6 +4,48 @@
 
     
   <url>
+    <loc>http://blog.juphy.cn/blogs/c64e9b3c.html</loc>
+    <lastmod>2018-09-03T11:05:46.646Z</lastmod>
+    <data>
+        <display>
+        <title>Angular管道</title>
+        <pubTime>2018-09-02T06:56:00.000Z</pubTime>
+        
+        <tag>Angular</tag>
+         
+        <tag>pipe</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="http://blog.juphy.cn/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.juphy.cn/blogs/527c21d3.html</loc>
+    <lastmod>2018-09-03T07:24:32.378Z</lastmod>
+    <data>
+        <display>
+        <title>Angular路由</title>
+        <pubTime>2018-05-24T06:56:00.000Z</pubTime>
+        
+        <tag>Angular</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="http://blog.juphy.cn/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.juphy.cn/blogs/46b44a0a.html</loc>
     <lastmod>2018-08-31T06:01:46.454Z</lastmod>
     <data>
@@ -141,26 +183,6 @@
            
              
               <breadCrumb title="node" url="http://blog.juphy.cn/categories/node/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.juphy.cn/blogs/527c21d3.html</loc>
-    <lastmod>2018-08-30T09:45:56.174Z</lastmod>
-    <data>
-        <display>
-        <title>Angular路由</title>
-        <pubTime>2018-05-24T06:56:00.000Z</pubTime>
-        
-        <tag>Angular</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="http://blog.juphy.cn/categories/JavaScript/"/>
           
         </display>
     </data>
