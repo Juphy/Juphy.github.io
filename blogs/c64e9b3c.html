@@ -175,7 +175,7 @@
 <meta property="og:site_name" content="挽留之王小石">
 <meta property="og:description" content="内置管道大小写转换12&amp;lt;p&amp;gt;&amp;#123;&amp;#123;&amp;apos;Angular&amp;apos; | uppercase&amp;#125;&amp;#125;&amp;lt;/p&amp;gt; // ANGULAR&amp;lt;p&amp;gt;&amp;#123;&amp;#123;&amp;apos;Angular&amp;apos; | lowercase&amp;#125;&amp;#125;&amp;lt;/p&amp;gt; // angular 数值格式化123456pi: num">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-03T11:05:46.646Z">
+<meta property="og:updated_time" content="2018-09-04T04:18:40.275Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Angular管道">
 <meta name="twitter:description" content="内置管道大小写转换12&amp;lt;p&amp;gt;&amp;#123;&amp;#123;&amp;apos;Angular&amp;apos; | uppercase&amp;#125;&amp;#125;&amp;lt;/p&amp;gt; // ANGULAR&amp;lt;p&amp;gt;&amp;#123;&amp;#123;&amp;apos;Angular&amp;apos; | lowercase&amp;#125;&amp;#125;&amp;lt;/p&amp;gt; // angular 数值格式化123456pi: num">
@@ -441,7 +441,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-09-03 19:05:46" itemprop="dateModified" datetime="2018-09-03T19:05:46+08:00">2018-09-03</time>
+                <time title="修改时间：2018-09-04 12:18:40" itemprop="dateModified" datetime="2018-09-04T12:18:40+08:00">2018-09-04</time>
               
             
           </span>
@@ -516,11 +516,120 @@
 <ul>
 <li>minIntegerDigits：整数部分保留最小的位数，默认值为1.</li>
 <li>minFractionDigits：小数部分保留最小的位数，默认值为0.</li>
-<li>maxFractionDigits：小数部分保留最大的位数，默认值为3.<br>小数点左边的数字表示最少保留的位数，如果原数值整数位不足，则用0补齐；小数点右边表示小数的最小位数和小数的最大位数，如果原值的小数位大于最大位数，要四舍五入保留到最大位数；如果原值的小数位小于最小位数，则要不足小数位补0。<h3 id="日期格式化"><a href="#日期格式化" class="headerlink" title="日期格式化"></a>日期格式化</h3>|日期|标志符|缩写|全称|单标志符|双标志符|<br>|:–|:–|:–|:–|:–|:–|<br>|地区|G|G(AD)|GGGG(Anno Domini)|||<br>|年|y|||y(2016)|yy(16)|<br>|月|M|MMM(Jun)|MMMM(June)|M(6)|MM(06)|<br>|日|d|||d(8)|dd(08)|<br>|星期|E|E,EE,EEE(Fri)|EEEE(Friday)|||<br>|时间(AM,PM)|j|||j(8 PM)|jj(08 PM)|<br>|12小时制|h|||h(8)|hh(08)|<br>|24小时制|H|||H(20)|HH(20)|<br>|分|m|||m(5)|mm(05)|<br>|秒|s|||s(8)|ss(08)|<br>|时区|Z||Z(china Standard Time)|||<br>|时区|z|z(GMT-8:00)||||</li>
+<li>maxFractionDigits：小数部分保留最大的位数，默认值为3.<br>小数点左边的数字表示最少保留的位数，如果原数值整数位不足，则用0补齐；小数点右边表示小数的最小位数和小数的最大位数，如果原值的小数位大于最大位数，要四舍五入保留到最大位数；如果原值的小数位小于最小位数，则要不足小数位补0。<h3 id="日期格式化"><a href="#日期格式化" class="headerlink" title="日期格式化"></a>日期格式化</h3></li>
 </ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">日期</th>
+<th style="text-align:left">标志符</th>
+<th style="text-align:left">缩写</th>
+<th style="text-align:left">全称</th>
+<th style="text-align:left">单标志符</th>
+<th style="text-align:left">双标志符</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">地区</td>
+<td style="text-align:left">G</td>
+<td style="text-align:left">G(AD)</td>
+<td style="text-align:left">GGGG(Anno Domini)</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">年</td>
+<td style="text-align:left">y</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">y(2016)</td>
+<td style="text-align:left">yy(16)</td>
+</tr>
+<tr>
+<td style="text-align:left">月</td>
+<td style="text-align:left">M</td>
+<td style="text-align:left">MMM(Jun)</td>
+<td style="text-align:left">MMMM(June)</td>
+<td style="text-align:left">M(6)</td>
+<td style="text-align:left">MM(06)</td>
+</tr>
+<tr>
+<td style="text-align:left">日</td>
+<td style="text-align:left">d</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">d(8)</td>
+<td style="text-align:left">dd(08)</td>
+</tr>
+<tr>
+<td style="text-align:left">星期</td>
+<td style="text-align:left">E</td>
+<td style="text-align:left">E,EE,EEE(Fri)</td>
+<td style="text-align:left">EEEE(Friday)</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">时间(AM,PM)</td>
+<td style="text-align:left">j</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">j(8 PM)</td>
+<td style="text-align:left">jj(08 PM)</td>
+</tr>
+<tr>
+<td style="text-align:left">12小时制</td>
+<td style="text-align:left">h</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">h(8)</td>
+<td style="text-align:left">hh(08)</td>
+</tr>
+<tr>
+<td style="text-align:left">24小时制</td>
+<td style="text-align:left">H</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">H(20)</td>
+<td style="text-align:left">HH(20)</td>
+</tr>
+<tr>
+<td style="text-align:left">分</td>
+<td style="text-align:left">m</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">m(5)</td>
+<td style="text-align:left">mm(05)</td>
+</tr>
+<tr>
+<td style="text-align:left">秒</td>
+<td style="text-align:left">s</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">s(8)</td>
+<td style="text-align:left">ss(08)</td>
+</tr>
+<tr>
+<td style="text-align:left">时区</td>
+<td style="text-align:left">Z</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">Z(china Standard Time)</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">时区</td>
+<td style="text-align:left">z</td>
+<td style="text-align:left">z(GMT-8:00)</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">date:Date = new Date(&apos;2016-06-08 20:05:08&apos;);</span><br><span class="line">&lt;p&gt;&#123;&#123;date | date: &quot;y-MM-dd EEEE&quot;&#125;&#125;&lt;/p&gt; //2016-06-08 Wednesday</span><br></pre></td></tr></table></figure>
 <h3 id="PercentPipe"><a href="#PercentPipe" class="headerlink" title="PercentPipe"></a>PercentPipe</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = 0.269</span><br><span class="line">&lt;p&gt;&#123;&#123;a | percent&#125;&#125;&lt;/p&gt; // 27%</span><br><span class="line">&lt;p&gt;&#123;&#123;a | percent:&apos;4.3-5&apos;&#125;&#125;&lt;/p&gt; // 0,026.900%</span><br></pre></td></tr></table></figure>
-<p><code>value_expression | percent [:digitsInfo[:locale]]</code><br>如果没有digitsInfo则按照整数取（四舍五入），如果有digitsInfo，则按照规则取。</p>
+<p><code>{ value_expression | percent [:digitsInfo[:locale]] }</code><br>如果没有digitsInfo则按照整数取（四舍五入），如果有digitsInfo，则按照规则取。</p>
 <h3 id="CurrencyPipe"><a href="#CurrencyPipe" class="headerlink" title="CurrencyPipe"></a>CurrencyPipe</h3><p><code>expression | currency[: currencyCode[: display[: digitInfo]]]</code></p>
 <ul>
 <li>currency 要显示内容（如’USD’，也可以是自定义的）</li>
@@ -536,7 +645,8 @@
 <h3 id="SlicePipe（非纯管道）"><a href="#SlicePipe（非纯管道）" class="headerlink" title="SlicePipe（非纯管道）"></a>SlicePipe（非纯管道）</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">str = &apos;abcdefghij&apos;;</span><br><span class="line">&lt;p&gt;&#123;&#123;str | slice:0:4&#125;&#125;&lt;/p&gt; // &apos;abcd&apos;</span><br><span class="line">&lt;p&gt;&#123;&#123;str | slice:4:0&#125;&#125;&lt;/p&gt; // &apos;&apos;</span><br><span class="line">&lt;p&gt;&#123;&#123;str | slice:-4&#125;&#125;&lt;/p&gt; // &apos;ghij&apos;</span><br></pre></td></tr></table></figure>
 <h3 id="JsonPipe（非纯管道）"><a href="#JsonPipe（非纯管道）" class="headerlink" title="JsonPipe（非纯管道）"></a>JsonPipe（非纯管道）</h3><p>将数据对象通过JSON.stringify()转换成对象字符串，并不改变原数据。</p>
 <h2 id="管道分类"><a href="#管道分类" class="headerlink" title="管道分类"></a>管道分类</h2><h3 id="纯管道"><a href="#纯管道" class="headerlink" title="纯管道"></a>纯管道</h3><p>仅当管道输入值变化的时候，才执行转换操作，默认的类型是 pure 类型。（备注：输入值变化是指原始数据类型如：string、number、boolean、Symbol等的数值发生变化或者对对象引用（Date、Array、Function、Object）的更改）。Angular会忽略对象内部的更改，除非是引用地址的变化。</p>
-<h3 id="非纯管道"><a href="#非纯管道" class="headerlink" title="非纯管道"></a>非纯管道</h3><p>angular组件在每次变化检测期间都会执行，如鼠标点击或移动都会执行 impure 管道。</p>
+<p>纯管道使用纯函数， 纯函数是指在处理输入并返回结果时，不会产生任何副作用的函数。 给定相同的输入，它们总是返回相同的输出。</p>
+<h3 id="非纯管道"><a href="#非纯管道" class="headerlink" title="非纯管道"></a>非纯管道</h3><p>angular组件在每次变化检测期间都会执行，如鼠标点击或移动都会执行 impure 管道。非纯管道可能会被调用很多次，因此必须小心使用非纯管道。</p>
 <p>将管道设置为非纯管道：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@Pipe(&#123;</span><br><span class="line">    name: &apos;SexReformPipe&apos;,</span><br><span class="line">    pure: false</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
 <h2 id="管道链"><a href="#管道链" class="headerlink" title="管道链"></a>管道链</h2><p>将多个管道用<code>|</code>连接在一起，组成管道链对数据进行处理。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;&#123;&#123;&apos;abcdefgh&apos; | slice:0:3 | uppercase&#125;&#125;&lt;/p&gt;  // &apos;ABC&apos;</span><br></pre></td></tr></table></figure></p>
 <h2 id="自定义管道"><a href="#自定义管道" class="headerlink" title="自定义管道"></a>自定义管道</h2><ul>
@@ -547,7 +657,13 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">import &#123; Pipe, PipeTransform &#125; form &apos;@angular/core&apos;</span><br><span class="line">@Pipe(&#123;name: &apos;exponentialStrength&apos;&#125;)</span><br><span class="line">export class ExponentialStrengthPipe implements PipeTransform &#123;</span><br><span class="line">  transform(value: number, exponent: string): number &#123;</span><br><span class="line">    let exp = parseFloat(exponent);</span><br><span class="line">    return Math.pow(value, isNaN(exp) ? 1 : exp);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">@Pipe(&#123; name: &apos;sexReform&apos; &#125;)</span><br><span class="line">export class SexReformPipe implements PipeTransform &#123;</span><br><span class="line">    transform(value: string):string&#123;</span><br><span class="line">        switch(value)&#123;</span><br><span class="line">            case &apos;male&apos;: return &apos;男&apos;;</span><br><span class="line">            case &apos;female&apos;: return &apos;女&apos;;</span><br><span class="line">            default: return &apos;&apos;;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>使用自定义管道<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Super power boost: &#123;&#123;2 | exponentialStrength: 10&#125;&#125;&lt;/p&gt;</span><br><span class="line">&lt;p&gt;&#123;&#123;sexValue | sexReform&#125;&#125;&lt;/p&gt;</span><br><span class="line">&lt;p class=&quot;&#123;&#123;sexValue | sexReform&#125;&#125;&quot;&gt;&lt;/p&gt;</span><br></pre></td></tr></table></figure></p>
 <p><code>定义完管道之后，要手动注册自定义管道，添加到declarations数组中</code>。</p>
-<h2 id="非纯AsyncPipe"><a href="#非纯AsyncPipe" class="headerlink" title="非纯AsyncPipe"></a>非纯AsyncPipe</h2>
+<h3 id="非纯AsyncPipe"><a href="#非纯AsyncPipe" class="headerlink" title="非纯AsyncPipe"></a>非纯AsyncPipe</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">import &#123; Component &#125; from &apos;@angular/core&apos;;</span><br><span class="line"></span><br><span class="line">import &#123; Observable, interval &#125; from &apos;rxjs&apos;;</span><br><span class="line">import &#123; map, take &#125; from &apos;rxjs/operators&apos;;</span><br><span class="line"></span><br><span class="line">@Component(&#123;</span><br><span class="line">  selector: &apos;app-hero-message&apos;,</span><br><span class="line">  template: `</span><br><span class="line">    &lt;h2&gt;Async Hero Message and AsyncPipe&lt;/h2&gt;</span><br><span class="line">    &lt;p&gt;Message: &#123;&#123; message$ | async &#125;&#125;&lt;/p&gt;</span><br><span class="line">    &lt;button (click)=&quot;resend()&quot;&gt;Resend&lt;/button&gt;`,</span><br><span class="line">&#125;)</span><br><span class="line">export class HeroAsyncMessageComponent &#123;</span><br><span class="line">  message$: Observable&lt;string&gt;;</span><br><span class="line"></span><br><span class="line">  private messages = [</span><br><span class="line">    &apos;You are my hero!&apos;,</span><br><span class="line">    &apos;You are the best hero!&apos;,</span><br><span class="line">    &apos;Will you be my hero?&apos;</span><br><span class="line">  ];</span><br><span class="line"></span><br><span class="line">  constructor() &#123; this.resend(); &#125;</span><br><span class="line"></span><br><span class="line">  resend() &#123;</span><br><span class="line">    this.message$ = interval(500).pipe(</span><br><span class="line">      map(i =&gt; this.messages[i]),</span><br><span class="line">      take(this.messages.length)</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>AsyncPipe接受一个Promise或Observable作为输入，并且自动订阅这个输入，最终返回他们给出的值。AsyncPipe 管道是有状态的。 该管道维护着一个所输入的 Observable 的订阅，并且持续从那个 Observable 中发出新到的值。</p>
+<h3 id="非纯且带缓存的管道"><a href="#非纯且带缓存的管道" class="headerlink" title="非纯且带缓存的管道"></a>非纯且带缓存的管道</h3><p>一个向服务器发起http请求的非纯管道。此管道只有在所请求的URL发生变化时才会向服务器发起请求，他会缓存服务器的响应。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">import &#123; Pipe, PipeTransform &#125; from &apos;@angular/core&apos;;</span><br><span class="line">import &#123; HttpClient &#125;          from &apos;@angular/common/http&apos;;</span><br><span class="line">@Pipe(&#123;</span><br><span class="line">  name: &apos;fetch&apos;,</span><br><span class="line">  pure: false</span><br><span class="line">&#125;)</span><br><span class="line">export class FetchJsonPipe  implements PipeTransform &#123;</span><br><span class="line">  private cachedData: any = null;</span><br><span class="line">  private cachedUrl = &apos;&apos;;</span><br><span class="line"></span><br><span class="line">  constructor(private http: HttpClient) &#123; &#125;</span><br><span class="line"></span><br><span class="line">  transform(url: string): any &#123;</span><br><span class="line">    if (url !== this.cachedUrl) &#123;</span><br><span class="line">      this.cachedData = null;</span><br><span class="line">      this.cachedUrl = url;</span><br><span class="line">      this.http.get(url).subscribe( result =&gt; this.cachedData = result );</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return this.cachedData;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在一个组件中使用：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">import &#123; Component &#125; from &apos;@angular/core&apos;;</span><br><span class="line"></span><br><span class="line">@Component(&#123;</span><br><span class="line">  selector: &apos;app-hero-list&apos;,</span><br><span class="line">  template: `</span><br><span class="line">    &lt;h2&gt;Heroes from JSON File&lt;/h2&gt;</span><br><span class="line"></span><br><span class="line">    &lt;div *ngFor=&quot;let hero of (&apos;assets/heroes.json&apos; | fetch) &quot;&gt;</span><br><span class="line">      &#123;&#123;hero.name&#125;&#125;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">    &lt;p&gt;Heroes as JSON:</span><br><span class="line">      &#123;&#123;&apos;assets/heroes.json&apos; | fetch | json&#125;&#125;</span><br><span class="line">    &lt;/p&gt;`</span><br><span class="line">&#125;)</span><br><span class="line">export class HeroListComponent &#123; &#125;</span><br></pre></td></tr></table></figure></p>
+<p>其中<code>assets/heroes.json</code>的数据是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">  &#123;&quot;name&quot;: &quot;Windstorm&quot;, &quot;canFly&quot;: true&#125;,</span><br><span class="line">  &#123;&quot;name&quot;: &quot;Bombasto&quot;,  &quot;canFly&quot;: false&#125;,</span><br><span class="line">  &#123;&quot;name&quot;: &quot;Magneto&quot;,   &quot;canFly&quot;: false&#125;,</span><br><span class="line">  &#123;&quot;name&quot;: &quot;Tornado&quot;,   &quot;canFly&quot;: true&#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure></p>
+<p>最终结果如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Heros from JSON File</span><br><span class="line"></span><br><span class="line">Windstorm</span><br><span class="line">Bombasto</span><br><span class="line">Magneto</span><br><span class="line">Tornado</span><br><span class="line"></span><br><span class="line">Heroes as JSON: [ &#123; &quot;name&quot;: &quot;Windstorm&quot;, &quot;canFly&quot;: true &#125;, &#123; &quot;name&quot;: &quot;Bombasto&quot;, &quot;canFly&quot;: false &#125;, &#123; &quot;name&quot;: &quot;Magneto&quot;, &quot;canFly&quot;: false &#125;, &#123; &quot;name&quot;: &quot;Tornado&quot;, &quot;canFly&quot;: true &#125; ]</span><br></pre></td></tr></table></figure></p>
+
       
     </div>
 
@@ -852,7 +968,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#内置管道"><span class="nav-number">1.</span> <span class="nav-text">内置管道</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#大小写转换"><span class="nav-number">1.1.</span> <span class="nav-text">大小写转换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数值格式化"><span class="nav-number">1.2.</span> <span class="nav-text">数值格式化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#日期格式化"><span class="nav-number">1.3.</span> <span class="nav-text">日期格式化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PercentPipe"><span class="nav-number">1.4.</span> <span class="nav-text">PercentPipe</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CurrencyPipe"><span class="nav-number">1.5.</span> <span class="nav-text">CurrencyPipe</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SlicePipe（非纯管道）"><span class="nav-number">1.6.</span> <span class="nav-text">SlicePipe（非纯管道）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JsonPipe（非纯管道）"><span class="nav-number">1.7.</span> <span class="nav-text">JsonPipe（非纯管道）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#管道分类"><span class="nav-number">2.</span> <span class="nav-text">管道分类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#纯管道"><span class="nav-number">2.1.</span> <span class="nav-text">纯管道</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#非纯管道"><span class="nav-number">2.2.</span> <span class="nav-text">非纯管道</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#管道链"><span class="nav-number">3.</span> <span class="nav-text">管道链</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义管道"><span class="nav-number">4.</span> <span class="nav-text">自定义管道</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#非纯AsyncPipe"><span class="nav-number">5.</span> <span class="nav-text">非纯AsyncPipe</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#内置管道"><span class="nav-number">1.</span> <span class="nav-text">内置管道</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#大小写转换"><span class="nav-number">1.1.</span> <span class="nav-text">大小写转换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数值格式化"><span class="nav-number">1.2.</span> <span class="nav-text">数值格式化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#日期格式化"><span class="nav-number">1.3.</span> <span class="nav-text">日期格式化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PercentPipe"><span class="nav-number">1.4.</span> <span class="nav-text">PercentPipe</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CurrencyPipe"><span class="nav-number">1.5.</span> <span class="nav-text">CurrencyPipe</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SlicePipe（非纯管道）"><span class="nav-number">1.6.</span> <span class="nav-text">SlicePipe（非纯管道）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JsonPipe（非纯管道）"><span class="nav-number">1.7.</span> <span class="nav-text">JsonPipe（非纯管道）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#管道分类"><span class="nav-number">2.</span> <span class="nav-text">管道分类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#纯管道"><span class="nav-number">2.1.</span> <span class="nav-text">纯管道</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#非纯管道"><span class="nav-number">2.2.</span> <span class="nav-text">非纯管道</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#管道链"><span class="nav-number">3.</span> <span class="nav-text">管道链</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义管道"><span class="nav-number">4.</span> <span class="nav-text">自定义管道</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#非纯AsyncPipe"><span class="nav-number">4.1.</span> <span class="nav-text">非纯AsyncPipe</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#非纯且带缓存的管道"><span class="nav-number">4.2.</span> <span class="nav-text">非纯且带缓存的管道</span></a></li></ol></li></ol></div>
             
 
           </div>
