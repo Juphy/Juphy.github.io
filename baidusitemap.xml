@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://blog.juphy.cn/blogs/5f94f955.html</loc>
+    <lastmod>2018-09-05T08:37:15.000Z</lastmod>
+    <data>
+        <display>
+        <title>Angular中的http请求</title>
+        <pubTime>2018-09-05T06:56:00.000Z</pubTime>
+        
+        <tag>Angular</tag>
+         
+        <tag>http</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="http://blog.juphy.cn/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://blog.juphy.cn/blogs/1e68471e.html</loc>
     <lastmod>2018-09-05T01:58:30.650Z</lastmod>
     <data>
@@ -219,9 +241,9 @@
         <title>nodejs发起http请求</title>
         <pubTime>2018-08-23T03:22:00.000Z</pubTime>
         
-        <tag>fetch</tag>
-         
         <tag>http</tag>
+         
+        <tag>fetch</tag>
          
         <tag>request</tag>
          

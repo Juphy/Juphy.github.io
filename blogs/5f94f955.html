@@ -167,18 +167,18 @@
 
 
 
-  <meta name="description" content="TypeScript模块系统模块是指在其自身作用域里执行，而不是在全局作用域里；模块间是依靠 export 和 import 建立关系。编译器在编译过程中，也是依赖这种关系来定位需要编译的文件。 TypeScript 依然还是以 JavaScript 文件的形式发布类库，这会导致类型无法表述，需要配合声明文件对其进行类型描述；因此声明文件成了类库一个必不可少的组成部分。 分类有声明文件要分清类库是">
-<meta name="keywords" content="Angular,TypeScript">
+  <meta name="description" content="GET 设置查询参数  1https://www.juphy.cn/todos?_page=1&amp;amp;_limit=10  创建HttpParams对象  1.12345import &amp;#123; HttpClient, HttpParams &amp;#125; from &amp;apos;@angular/common/http&amp;apos;;const params = new HttpParams().">
+<meta name="keywords" content="Angular,http">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Angular如何使用第三方库">
-<meta property="og:url" content="http://blog.juphy.cn/blogs/332631ae.html">
+<meta property="og:title" content="Angular中的http请求">
+<meta property="og:url" content="http://blog.juphy.cn/blogs/5f94f955.html">
 <meta property="og:site_name" content="挽留之王小石">
-<meta property="og:description" content="TypeScript模块系统模块是指在其自身作用域里执行，而不是在全局作用域里；模块间是依靠 export 和 import 建立关系。编译器在编译过程中，也是依赖这种关系来定位需要编译的文件。 TypeScript 依然还是以 JavaScript 文件的形式发布类库，这会导致类型无法表述，需要配合声明文件对其进行类型描述；因此声明文件成了类库一个必不可少的组成部分。 分类有声明文件要分清类库是">
+<meta property="og:description" content="GET 设置查询参数  1https://www.juphy.cn/todos?_page=1&amp;amp;_limit=10  创建HttpParams对象  1.12345import &amp;#123; HttpClient, HttpParams &amp;#125; from &amp;apos;@angular/common/http&amp;apos;;const params = new HttpParams().">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-30T09:45:56.164Z">
+<meta property="og:updated_time" content="2018-09-05T08:37:15.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Angular如何使用第三方库">
-<meta name="twitter:description" content="TypeScript模块系统模块是指在其自身作用域里执行，而不是在全局作用域里；模块间是依靠 export 和 import 建立关系。编译器在编译过程中，也是依赖这种关系来定位需要编译的文件。 TypeScript 依然还是以 JavaScript 文件的形式发布类库，这会导致类型无法表述，需要配合声明文件对其进行类型描述；因此声明文件成了类库一个必不可少的组成部分。 分类有声明文件要分清类库是">
+<meta name="twitter:title" content="Angular中的http请求">
+<meta name="twitter:description" content="GET 设置查询参数  1https://www.juphy.cn/todos?_page=1&amp;amp;_limit=10  创建HttpParams对象  1.12345import &amp;#123; HttpClient, HttpParams &amp;#125; from &amp;apos;@angular/common/http&amp;apos;;const params = new HttpParams().">
 
 
 
@@ -187,7 +187,7 @@
 
 
 
-  <link rel="canonical" href="http://blog.juphy.cn/blogs/332631ae.html"/>
+  <link rel="canonical" href="http://blog.juphy.cn/blogs/5f94f955.html"/>
 
 
 
@@ -197,7 +197,7 @@
   };
 </script>
 
-  <title>Angular如何使用第三方库 | 挽留之王小石</title>
+  <title>Angular中的http请求 | 挽留之王小石</title>
   
 
 
@@ -382,7 +382,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.juphy.cn/blogs/332631ae.html">
+    <link itemprop="mainEntityOfPage" href="http://blog.juphy.cn/blogs/5f94f955.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Juphy">
@@ -399,7 +399,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Angular如何使用第三方库
+          <h1 class="post-title" itemprop="name headline">Angular中的http请求
               
             
           </h1>
@@ -424,24 +424,12 @@
                 
               
 
-              <time title="创建时间：2018-05-31 14:56:00" itemprop="dateCreated datePublished" datetime="2018-05-31T14:56:00+08:00">2018-05-31</time>
+              <time title="创建时间：2018-09-05 14:56:00 / 修改时间：16:37:15" itemprop="dateCreated datePublished" datetime="2018-09-05T14:56:00+08:00">2018-09-05</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-08-30 17:45:56" itemprop="dateModified" datetime="2018-08-30T17:45:56+08:00">2018-08-30</time>
               
             
           </span>
@@ -473,8 +461,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/blogs/332631ae.html#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/blogs/332631ae.html" itemprop="commentCount"></span>
+                <a href="/blogs/5f94f955.html#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/blogs/5f94f955.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -510,22 +498,38 @@
       
 
       
-        <h2 id="TypeScript模块系统"><a href="#TypeScript模块系统" class="headerlink" title="TypeScript模块系统"></a>TypeScript模块系统</h2><p>模块是指在其自身作用域里执行，而不是在全局作用域里；模块间是依靠 export 和 import 建立关系。编译器在编译过程中，也是依赖这种关系来定位需要编译的文件。</p>
-<p>TypeScript 依然还是以 JavaScript 文件的形式发布类库，这会导致类型无法表述，需要配合<code>声明文件</code>对其进行类型描述；因此<code>声明文件</code>成了类库一个必不可少的组成部分。</p>
-<h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><h3 id="有声明文件"><a href="#有声明文件" class="headerlink" title="有声明文件"></a>有声明文件</h3><p>要分清类库是否有声明文件 *.d.ts</p>
-<blockquote>
-<p>类库自带</p>
+        <h2 id="GET"><a href="#GET" class="headerlink" title="GET"></a>GET</h2><blockquote>
+<p>设置查询参数</p>
 </blockquote>
-<p>从 Npm 安装一个依赖包后，可以直接检查该依赖包库的 package.json 是否包含 typings 节点，该节点对应的文件就是声明文件。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.juphy.cn/todos?_page=1&amp;_limit=10</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>TypeSearch检索</p>
+<p>创建HttpParams对象</p>
 </blockquote>
-<p>TypeScript 提供了一个叫 <a href="https://microsoft.github.io/TypeSearch/" target="_blank" rel="noopener">TypeSearch</a> 网站，可以直接输入关键词检查是否包含该类库的声明文件。</p>
-<h3 id="无声明文件"><a href="#无声明文件" class="headerlink" title="无声明文件"></a>无声明文件</h3><p>Angular Cli 创建的项目会包含一个 src/typings.d.ts 声明文件，它会自动包含在全局声明定义中，而把这些类库的声明信息写在这里面再好不过。</p>
-<p>一般而言自己很难对一个类库写一个完整的声明文件，这对于成本来说太不合算，因此往往都是只对部分全局对象做一个 any （表示忽略该静态类型检查）亦可，例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">declare const XLSX: any</span><br></pre></td></tr></table></figure></p>
-<h2 id="如何使用？"><a href="#如何使用？" class="headerlink" title="如何使用？"></a>如何使用？</h2><h3 id="有声明文件-1"><a href="#有声明文件-1" class="headerlink" title="有声明文件"></a>有声明文件</h3><p>对于有声明文件，无需额外做什么，只需在需要模块的地方使用 import 来导入即可。</p>
-<h3 id="无声明文件-1"><a href="#无声明文件-1" class="headerlink" title="无声明文件"></a>无声明文件</h3><p>使用 any 来表示忽略静态类型检查，意味者无法享受声明文件带来的智能提示快感，可以在项目的任意位置直接使用它，但也仅仅只能识别声明的变量，而实例的方法或属性是不可知的。</p>
-<p>除此之外 TypeScript 编译过程中也不会对 G2 做任何类型检查，G2 是否真的存在只能由自己把握。对于 Angular 而言，是需要额外在 angular.json 的 scripts 节点上明确加载这些模块。</p>
+<p>1.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">import &#123; HttpClient, HttpParams &#125; from &apos;@angular/common/http&apos;;</span><br><span class="line"></span><br><span class="line">const params = new HttpParams().set(&apos;_page&apos;, 1).set(&apos;_limit&apos;, 10);</span><br><span class="line"></span><br><span class="line">this.http.get(&apos;https://www.juphy.cn/todos&apos;, &#123;params&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>通过链式语法调用 set() 方法，构建 HttpParams 对象。这是因为HttpParams对象是不可变的，通过set() 方法可以防止该对象被修改。每当调用 set() 方法，将会返回包含新值的 HttpParams 对象。</p>
+<ol start="2">
+<li>使用formString</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const params = new HttpParams(&#123;formString: &apos;_page=1&amp;_limit=10&apos;&#125;);</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>使用formObject</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const params = new HttpParams(&#123; fromObject: &#123; _page: &quot;1&quot;, _limit: &quot;10&quot; &#125; &#125;);</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>使用request API</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">this.http.request(&apos;GET&apos;, &apos;https://www.juphy.cn/todos&apos;, &#123;params&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="获取完整响应"><a href="#获取完整响应" class="headerlink" title="获取完整响应"></a>获取完整响应</h2><p>默认情况下，httpClient服务返回的是响应体，如果需要获取响应头的相关信息，可以设置options的对象的observe属性值为response来获取完整的响应对象。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">this.http.get(&apos;https://www.juphy.cn/todos&apos;,&#123;</span><br><span class="line">    observe: &apos;response&apos;</span><br><span class="line">&#125;).subscribe(res =&gt; &#123;</span><br><span class="line">    console.dir(&apos;Response:&apos;+res.status);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<h2 id="设置响应类型"><a href="#设置响应类型" class="headerlink" title="设置响应类型"></a>设置响应类型</h2><p>options设置responseType属性的值，’text’,’arraybuffer’,’blob’。</p>
+<h2 id="设置Http-Headers"><a href="#设置Http-Headers" class="headerlink" title="设置Http Headers"></a>设置Http Headers</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const params = new HttpParams(&#123; fromObject: &#123; _page: &quot;1&quot;, _limit: &quot;10&quot; &#125; &#125;);</span><br><span class="line">const headers = new HttpHeaders().set(&apos;Content-Type&apos;, &apos;application/json; charset=UTF-8&apos;);</span><br><span class="line">this.http.get(&apos;url&apos;, &#123;headers, params&#125;);</span><br></pre></td></tr></table></figure>
+<h2 id="多个http请求"><a href="#多个http请求" class="headerlink" title="多个http请求"></a>多个http请求</h2><h3 id="并行发送"><a href="#并行发送" class="headerlink" title="并行发送"></a>并行发送</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">const parallel$ = forkJoin(</span><br><span class="line">    this.http.get(&apos;url1&apos;),</span><br><span class="line">    this.http.get(&apos;url2&apos;)</span><br><span class="line">);</span><br><span class="line">parallel$.subscribe(res =&gt;&#123;</span><br><span class="line">    res是一个数组包含多个请求返回的结果。</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="顺序发送"><a href="#顺序发送" class="headerlink" title="顺序发送"></a>顺序发送</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">const sequence$ = this.http.get(&apos;url1&apos;)</span><br><span class="line">    .pipe(</span><br><span class="line">        switchMap(res =&gt;&#123;</span><br><span class="line">            // 此res是url1返回的结果</span><br><span class="line">            return this.http.get(&apos;url2&apos;);</span><br><span class="line">        &#125;)</span><br><span class="line">    );</span><br><span class="line">    sequence$.subscribe(res=&gt;&#123;</span><br><span class="line">        res// 此res是url2返回的结果</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="控制返回结果"><a href="#控制返回结果" class="headerlink" title="控制返回结果"></a>控制返回结果</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">const sequence$ = this.http.get(&apos;url1&apos;)</span><br><span class="line">    .pipe(</span><br><span class="line">        switchMap(res =&gt;&#123;</span><br><span class="line">            // 此res是url1返回的结果</span><br><span class="line">            return this.http.get(&apos;url2&apos;);</span><br><span class="line">        &#125;, (res1, res2) =&gt; [res1, res2]) // 此处控制返回结果</span><br><span class="line">    );</span><br><span class="line">    sequence$.subscribe(res=&gt;&#123;</span><br><span class="line">        res; // [res1, res2]</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure>
+<h2 id="请求异常处理"><a href="#请求异常处理" class="headerlink" title="请求异常处理"></a>请求异常处理</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">import &#123; of &#125; from &quot;rxjs&quot;;</span><br><span class="line">import &#123; catchError &#125; from &quot;rxjs/operators&quot;;</span><br><span class="line"></span><br><span class="line">this.http.get(&apos;url&apos;).pipe(</span><br><span class="line">    catchError(error =&gt; &#123;</span><br><span class="line">        console.error(&apos;Error catched&apos;, error);</span><br><span class="line">        return of(&#123;description: &apos;Error Value Emitted&apos;&#125;)</span><br><span class="line">    &#125;)</span><br><span class="line">).subscribe(res =&gt; console.log(res));</span><br></pre></td></tr></table></figure>
+<h2 id="Http拦截器"><a href="#Http拦截器" class="headerlink" title="Http拦截器"></a>Http拦截器</h2><h3 id="定义拦截器"><a href="#定义拦截器" class="headerlink" title="定义拦截器"></a>定义拦截器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line">import &#123; Injectable &#125; from &quot;@angular/core&quot;;</span><br><span class="line">import &#123; HttpEvent, HttpRequest, HttpHandler, HttpInterceptor &#125; from &quot;@angular/common/http&quot;;</span><br><span class="line">import &#123; Observable, of, throwError &#125; from &apos;rxjs&apos;;</span><br><span class="line">import &#123; mergeMap, catchError &#125; from &apos;rxjs/operators&apos;;</span><br><span class="line"></span><br><span class="line">@Injectable()</span><br><span class="line">export class DefaultInterceptor implements HttpInterceptor &#123;</span><br><span class="line">  constructor(private injector: Injector)&#123;&#125;</span><br><span class="line"></span><br><span class="line">  private handleData(</span><br><span class="line">    event: HttpResponse&lt;any&gt; | HttpErrorResponse</span><br><span class="line">  ): Observable&lt;any&gt;&#123;</span><br><span class="line">    console.log(event);</span><br><span class="line">    switch(event.status)&#123;</span><br><span class="line">        case 200:</span><br><span class="line">        break;</span><br><span class="line">        case 401:</span><br><span class="line">        break;</span><br><span class="line">        case 403:</span><br><span class="line">        break;</span><br><span class="line">        case 404:</span><br><span class="line">        break;</span><br><span class="line">        case 500:</span><br><span class="line">        break;</span><br><span class="line">        default:</span><br><span class="line">            if(event instanceof HttpErrorResponse)&#123;</span><br><span class="line">                console.warn(</span><br><span class="line">                    &apos;未可知错误，大部分是由于后端不支持CORS或无效配置引起&apos;,</span><br><span class="line">                    event</span><br><span class="line">                );</span><br><span class="line">            &#125;</span><br><span class="line">        break;</span><br><span class="line">    &#125;</span><br><span class="line">    return of(event);</span><br><span class="line">  &#125;</span><br><span class="line">  intercept(</span><br><span class="line">    req: HttpRequest&lt;any&gt;,</span><br><span class="line">    next: HttpHandler</span><br><span class="line">  ): Observable&lt;HttpEvent&lt;any&gt;&gt; &#123;</span><br><span class="line">     let url= req.url; // 设置url形式，统一加上服务端前缀</span><br><span class="line">     const newReq = req.clone(</span><br><span class="line">        url: url,</span><br><span class="line">        headers: req.headers.set(&quot;X-CustomAuthHeader&quot;, &quot;iloveangular&quot;)</span><br><span class="line">     );</span><br><span class="line">     return next.handle(newReq).pipe(</span><br><span class="line">        mergeMap((event: any) =&gt; &#123;</span><br><span class="line">            // 允许统一对请求错误进行处理，这是因为一个请求若是业务上错误的情况下其HTTP请求的状态是200的情况下需要</span><br><span class="line">            if(event instanceof HttpReponse &amp;&amp; event.status === 200) return this.handleData(event);</span><br><span class="line">            // 若一切正常，则后续操作</span><br><span class="line">            return of(event);</span><br><span class="line">        &#125;),</span><br><span class="line">        catchError((err: HttpErrorResponse) =&gt; this.handleData(err))</span><br><span class="line">        );</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="应用拦截器"><a href="#应用拦截器" class="headerlink" title="应用拦截器"></a>应用拦截器</h3><p>app.module.ts<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">import DefaultInterceptor</span><br><span class="line">@NgModule(&#123;</span><br><span class="line">  declarations: [AppComponent],</span><br><span class="line">  imports: [BrowserModule, HttpClientModule],</span><br><span class="line">  providers: [</span><br><span class="line">    &#123; provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true &#125;</span><br><span class="line">  ],</span><br><span class="line">  bootstrap: [AppComponent]</span><br><span class="line">&#125;)</span><br><span class="line">export class AppModule &#123;&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="Http进度事件"><a href="#Http进度事件" class="headerlink" title="Http进度事件"></a>Http进度事件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">this.http.get(&apos;url&apos;, &#123;</span><br><span class="line">    observe: &apos;events&apos;,</span><br><span class="line">    reportProgress: true</span><br><span class="line">&#125;).subscribe((event: HttpEvent&lt;any&gt;) =&gt; &#123;</span><br><span class="line">    switch(event.type)&#123;</span><br><span class="line">          case HttpEventType.Sent:</span><br><span class="line">            console.log(&quot;Request sent!&quot;);</span><br><span class="line">            break;</span><br><span class="line">          case HttpEventType.ResponseHeader:</span><br><span class="line">            console.log(&quot;Response header received!&quot;);</span><br><span class="line">            break;</span><br><span class="line">          case HttpEventType.DownloadProgress:</span><br><span class="line">            const kbLoaded = Math.round(event.loaded / 1024);</span><br><span class="line">            console.log(`Download in progress! $&#123;kbLoaded&#125;Kb loaded`);</span><br><span class="line">            break;</span><br><span class="line">          case HttpEventType.Response:</span><br><span class="line">            console.log(&quot;Done!&quot;, event.body);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>控制台输出：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Request sent!</span><br><span class="line">Response header received!</span><br><span class="line">Download in progress! 6Kb loaded</span><br><span class="line">Download in progress! 24Kb loaded</span><br><span class="line">Done!</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -547,7 +551,7 @@
     <strong>本文作者： </strong>Juphy</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://blog.juphy.cn/blogs/332631ae.html" title="Angular如何使用第三方库">http://blog.juphy.cn/blogs/332631ae.html</a>
+    <a href="http://blog.juphy.cn/blogs/5f94f955.html" title="Angular中的http请求">http://blog.juphy.cn/blogs/5f94f955.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
@@ -562,7 +566,7 @@
           
             <a href="/tags/Angular/" rel="tag"><i class="fa fa-tag"></i> Angular</a>
           
-            <a href="/tags/TypeScript/" rel="tag"><i class="fa fa-tag"></i> TypeScript</a>
+            <a href="/tags/http/" rel="tag"><i class="fa fa-tag"></i> http</a>
           
         </div>
       
@@ -575,8 +579,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blogs/527c21d3.html" rel="next" title="Angular路由">
-                <i class="fa fa-chevron-left"></i> Angular路由
+              <a href="/blogs/1e68471e.html" rel="next" title="JavaScript读写excel文件">
+                <i class="fa fa-chevron-left"></i> JavaScript读写excel文件
               </a>
             
           </div>
@@ -584,10 +588,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/blogs/36b47415.html" rel="prev" title="Angular的hash模式">
-                Angular的hash模式 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -837,7 +837,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#TypeScript模块系统"><span class="nav-number">1.</span> <span class="nav-text">TypeScript模块系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分类"><span class="nav-number">2.</span> <span class="nav-text">分类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#有声明文件"><span class="nav-number">2.1.</span> <span class="nav-text">有声明文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#无声明文件"><span class="nav-number">2.2.</span> <span class="nav-text">无声明文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何使用？"><span class="nav-number">3.</span> <span class="nav-text">如何使用？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#有声明文件-1"><span class="nav-number">3.1.</span> <span class="nav-text">有声明文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#无声明文件-1"><span class="nav-number">3.2.</span> <span class="nav-text">无声明文件</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#GET"><span class="nav-number">1.</span> <span class="nav-text">GET</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#获取完整响应"><span class="nav-number">2.</span> <span class="nav-text">获取完整响应</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置响应类型"><span class="nav-number">3.</span> <span class="nav-text">设置响应类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置Http-Headers"><span class="nav-number">4.</span> <span class="nav-text">设置Http Headers</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多个http请求"><span class="nav-number">5.</span> <span class="nav-text">多个http请求</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#并行发送"><span class="nav-number">5.1.</span> <span class="nav-text">并行发送</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#顺序发送"><span class="nav-number">5.2.</span> <span class="nav-text">顺序发送</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#控制返回结果"><span class="nav-number">5.3.</span> <span class="nav-text">控制返回结果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#请求异常处理"><span class="nav-number">6.</span> <span class="nav-text">请求异常处理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Http拦截器"><span class="nav-number">7.</span> <span class="nav-text">Http拦截器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#定义拦截器"><span class="nav-number">7.1.</span> <span class="nav-text">定义拦截器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#应用拦截器"><span class="nav-number">7.2.</span> <span class="nav-text">应用拦截器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Http进度事件"><span class="nav-number">8.</span> <span class="nav-text">Http进度事件</span></a></li></ol></div>
             
 
           </div>
