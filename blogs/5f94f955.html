@@ -167,18 +167,18 @@
 
 
 
-  <meta name="description" content="GET 设置查询参数  1https://www.juphy.cn/todos?_page=1&amp;amp;_limit=10  创建HttpParams对象  1.12345import &amp;#123; HttpClient, HttpParams &amp;#125; from &amp;apos;@angular/common/http&amp;apos;;const params = new HttpParams().">
+  <meta name="description" content="GET 设置查询参数  1https://www.juphy.cn/todos?_page=1&amp;amp;_limit=10  创建HttpParams对象   直接链式创建12345import &amp;#123; HttpClient, HttpParams &amp;#125; from &amp;apos;@angular/common/http&amp;apos;;const params = new HttpPara">
 <meta name="keywords" content="Angular,http">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Angular中的http请求">
 <meta property="og:url" content="http://blog.juphy.cn/blogs/5f94f955.html">
 <meta property="og:site_name" content="挽留之王小石">
-<meta property="og:description" content="GET 设置查询参数  1https://www.juphy.cn/todos?_page=1&amp;amp;_limit=10  创建HttpParams对象  1.12345import &amp;#123; HttpClient, HttpParams &amp;#125; from &amp;apos;@angular/common/http&amp;apos;;const params = new HttpParams().">
+<meta property="og:description" content="GET 设置查询参数  1https://www.juphy.cn/todos?_page=1&amp;amp;_limit=10  创建HttpParams对象   直接链式创建12345import &amp;#123; HttpClient, HttpParams &amp;#125; from &amp;apos;@angular/common/http&amp;apos;;const params = new HttpPara">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-05T08:37:15.000Z">
+<meta property="og:updated_time" content="2018-09-06T02:54:43.754Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Angular中的http请求">
-<meta name="twitter:description" content="GET 设置查询参数  1https://www.juphy.cn/todos?_page=1&amp;amp;_limit=10  创建HttpParams对象  1.12345import &amp;#123; HttpClient, HttpParams &amp;#125; from &amp;apos;@angular/common/http&amp;apos;;const params = new HttpParams().">
+<meta name="twitter:description" content="GET 设置查询参数  1https://www.juphy.cn/todos?_page=1&amp;amp;_limit=10  创建HttpParams对象   直接链式创建12345import &amp;#123; HttpClient, HttpParams &amp;#125; from &amp;apos;@angular/common/http&amp;apos;;const params = new HttpPara">
 
 
 
@@ -424,12 +424,24 @@
                 
               
 
-              <time title="创建时间：2018-09-05 14:56:00 / 修改时间：16:37:15" itemprop="dateCreated datePublished" datetime="2018-09-05T14:56:00+08:00">2018-09-05</time>
+              <time title="创建时间：2018-09-05 14:56:00" itemprop="dateCreated datePublished" datetime="2018-09-05T14:56:00+08:00">2018-09-05</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-09-06 10:54:43" itemprop="dateModified" datetime="2018-09-06T10:54:43+08:00">2018-09-06</time>
               
             
           </span>
@@ -505,7 +517,10 @@
 <blockquote>
 <p>创建HttpParams对象</p>
 </blockquote>
-<p>1.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">import &#123; HttpClient, HttpParams &#125; from &apos;@angular/common/http&apos;;</span><br><span class="line"></span><br><span class="line">const params = new HttpParams().set(&apos;_page&apos;, 1).set(&apos;_limit&apos;, 10);</span><br><span class="line"></span><br><span class="line">this.http.get(&apos;https://www.juphy.cn/todos&apos;, &#123;params&#125;);</span><br></pre></td></tr></table></figure></p>
+<ol>
+<li>直接链式创建<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">import &#123; HttpClient, HttpParams &#125; from &apos;@angular/common/http&apos;;</span><br><span class="line"></span><br><span class="line">const params = new HttpParams().set(&apos;_page&apos;, 1).set(&apos;_limit&apos;, 10);</span><br><span class="line"></span><br><span class="line">this.http.get(&apos;https://www.juphy.cn/todos&apos;, &#123;params&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
 <p>通过链式语法调用 set() 方法，构建 HttpParams 对象。这是因为HttpParams对象是不可变的，通过set() 方法可以防止该对象被修改。每当调用 set() 方法，将会返回包含新值的 HttpParams 对象。</p>
 <ol start="2">
 <li>使用formString</li>
