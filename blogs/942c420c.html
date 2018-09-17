@@ -175,7 +175,7 @@
 <meta property="og:site_name" content="挽留之王小石">
 <meta property="og:description" content="URL一般来说，URL只能使用英文字母、阿拉伯数字和某些标点符号，不能使用其他文字和符号。  只有字母和数字[0-9a-zA-Z]、一些特殊符号”$-_.+!*’(),”[不包括双引号]、以及某些保留字，才可以不经过编码直接用于URL。  URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https://zh.wikipedia.org/wiki/%E6%">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-10T06:17:47.844Z">
+<meta property="og:updated_time" content="2018-09-13T06:21:33.583Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="URL编码">
 <meta name="twitter:description" content="URL一般来说，URL只能使用英文字母、阿拉伯数字和某些标点符号，不能使用其他文字和符号。  只有字母和数字[0-9a-zA-Z]、一些特殊符号”$-_.+!*’(),”[不包括双引号]、以及某些保留字，才可以不经过编码直接用于URL。  URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https://zh.wikipedia.org/wiki/%E6%">
@@ -424,12 +424,24 @@
                 
               
 
-              <time title="创建时间：2018-09-10 14:56:00 / 修改时间：14:17:47" itemprop="dateCreated datePublished" datetime="2018-09-10T14:56:00+08:00">2018-09-10</time>
+              <time title="创建时间：2018-09-10 14:56:00" itemprop="dateCreated datePublished" datetime="2018-09-10T14:56:00+08:00">2018-09-10</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-09-13 14:21:33" itemprop="dateModified" datetime="2018-09-13T14:21:33+08:00">2018-09-13</time>
               
             
           </span>
@@ -513,8 +525,9 @@
 <p>GET和POST方法的编码，用的是网页的编码</p>
 </blockquote>
 <h3 id="Ajax调用的URL"><a href="#Ajax调用的URL" class="headerlink" title="Ajax调用的URL"></a>Ajax调用的URL</h3><p>在Ajax调用中，IE总是采用GB2312编码（操作系统的默认编码），而Firefox总是采用utf-8编码。</p>
-<h2 id="escape"><a href="#escape" class="headerlink" title="escape()"></a>escape()</h2><p>除了ASCII字母、数字、标点符号”@ * _ + - . /“以外，对其他所有字符进行编码。在\u0000到\u00ff之间的符号被转成%xx的形式，其余符号被转成%uxxxx的形式。对应的解码函数是unescape()。</p>
-<p>escape()不对”+”编码。</p>
+<h2 id="escape"><a href="#escape" class="headerlink" title="escape()"></a>escape()</h2><p>现在已经不再使用了。</p>
+<p>除了ASCII字母、数字、标点符号”@ * _ + - . /“以外，对其他所有字符进行编码。返回一个字符的Unicode编码值，在\u0000到\u00ff之间的符号被转成%xx的形式，其余符号被转成%uxxxx的形式。对应的解码函数是unescape()。</p>
+<p>escape()不对”+”编码。网页在提交表单的时候，如果有空格，则会被转化为+字符。服务器处理数据的时候，会把+号处理成空格。</p>
 <h2 id="encodeURI"><a href="#encodeURI" class="headerlink" title="encodeURI()"></a>encodeURI()</h2><p>它着眼于对整个URL进行编码，因此除了常见的符号以外，对其他一些在网址中有特殊含义的符号”; / ? : @ &amp; = + $ , #”，也不进行编码。编码后，它输出符号的utf-8形式，并且在每个字节前加上%。</p>
 <p>解码函数是decodeURI()。</p>
 <p>不对单引号’编码。</p>

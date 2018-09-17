@@ -4,25 +4,19 @@
 
     
   <url>
-    <loc>http://blog.juphy.cn/blogs/9b757592.html</loc>
-    <lastmod>2018-09-10T09:25:57.831Z</lastmod>
+    <loc>http://blog.juphy.cn/blogs/ba600921.html</loc>
+    <lastmod>2018-09-17T03:41:58.188Z</lastmod>
     <data>
         <display>
-        <title>nodejs发起http请求</title>
-        <pubTime>2018-08-23T03:22:00.000Z</pubTime>
+        <title>Angular组件通信</title>
+        <pubTime>2018-06-20T06:56:00.000Z</pubTime>
         
-        <tag>fetch</tag>
-         
-        <tag>http</tag>
-         
-        <tag>request</tag>
-         
-        <tag>axios</tag>
+        <tag>Angular</tag>
          
          
            
              
-              <breadCrumb title="node" url="http://blog.juphy.cn/categories/node/"/>
+              <breadCrumb title="JavaScript" url="http://blog.juphy.cn/categories/JavaScript/"/>
           
         </display>
     </data>
@@ -31,7 +25,7 @@
     
   <url>
     <loc>http://blog.juphy.cn/blogs/942c420c.html</loc>
-    <lastmod>2018-09-10T06:17:47.844Z</lastmod>
+    <lastmod>2018-09-13T06:21:33.583Z</lastmod>
     <data>
         <display>
         <title>URL编码</title>
@@ -51,7 +45,7 @@
     
   <url>
     <loc>http://blog.juphy.cn/blogs/5adc8916.html</loc>
-    <lastmod>2018-09-07T05:58:53.298Z</lastmod>
+    <lastmod>2018-09-13T05:39:53.065Z</lastmod>
     <data>
         <display>
         <title>Angular中的ng-content使用</title>
@@ -65,6 +59,32 @@
            
              
               <breadCrumb title="JavaScript" url="http://blog.juphy.cn/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.juphy.cn/blogs/9b757592.html</loc>
+    <lastmod>2018-09-10T09:25:57.831Z</lastmod>
+    <data>
+        <display>
+        <title>nodejs发起http请求</title>
+        <pubTime>2018-08-23T03:22:00.000Z</pubTime>
+        
+        <tag>fetch</tag>
+         
+        <tag>http</tag>
+         
+        <tag>request</tag>
+         
+        <tag>axios</tag>
+         
+         
+           
+             
+              <breadCrumb title="node" url="http://blog.juphy.cn/categories/node/"/>
           
         </display>
     </data>
@@ -206,26 +226,6 @@
         <display>
         <title>Angular路由之history与locationStrategy</title>
         <pubTime>2018-05-17T06:56:00.000Z</pubTime>
-        
-        <tag>Angular</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="http://blog.juphy.cn/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blog.juphy.cn/blogs/ba600921.html</loc>
-    <lastmod>2018-08-30T09:45:56.186Z</lastmod>
-    <data>
-        <display>
-        <title>Angular组件通信</title>
-        <pubTime>2018-06-20T06:56:00.000Z</pubTime>
         
         <tag>Angular</tag>
          
