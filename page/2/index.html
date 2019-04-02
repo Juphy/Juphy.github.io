@@ -18,28 +18,24 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="baidu-site-verification" content="GdjCeo8WaE">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
-<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
-<style>
-    .pace .pace-progress {
-        background: #4f5254; /*进度条颜色*/
-        height: 3px;
-    }
-    .pace .pace-progress-inner {
-         box-shadow: 0 0 10px #4f5254, 0 0 5px     #4f5254; /*阴影颜色*/
-    }
-    .pace .pace-activity {
-        border-top-color: #4f5254;    /*上边框颜色*/
-        border-left-color: #4f5254;    /*左边框颜色*/
-    }
-</style>
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
 
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -120,16 +116,16 @@
 <link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png?v=6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png?v=6.3.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.3.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png?v=6.3.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.3.0">
 
 
-  <link rel="mask-icon" href="/images/logo.png?v=6.3.0" color="#222">
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
 
 
 
@@ -267,7 +263,6 @@
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <canvas id="canvas"></canvas>
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
@@ -281,7 +276,7 @@
     </div>
     
       
-        <p class="site-subtitle">Hello,world!</p>
+        <h1 class="site-subtitle" itemprop="description">Hello,world!</h1>
       
     
   </div>
@@ -332,6 +327,14 @@
           <li class="menu-item menu-item-archives">
     <a href="/archives" rel="section">
       <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
   </li>
 
       
@@ -399,14 +402,14 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/blogs/445785db.html" itemprop="url">
                   nodejs控制异步并发
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -432,22 +435,6 @@
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-08-30 17:45:56" itemprop="dateModified" datetime="2018-08-30T17:45:56+08:00">2018-08-30</time>
-              
-            
           </span>
 
           
@@ -472,19 +459,20 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/blogs/445785db.html#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/blogs/445785db.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
+          
+             <span id="/blogs/445785db.html" class="leancloud_visitors" data-flag-title="nodejs控制异步并发">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -508,8 +496,7 @@
       
         
           
-          eventproxy 控制并发如果并发异步获取两三个地址的数据，并且要在获取到数据之后，对这些数据一起进行利用的话，常规的写法是自己维护一个计数器。\先定义一个 var count = 0，然后每次抓取成功以后，就 count++。如果你是要抓取三个源的数据，由于你根本不知道这些异步操作到底谁先完成，那么每次当抓取成功的时候，就判断一下 count === 3。当值为真时，使用另一个函数继续完成操作。\而 eventproxy 就起到了这个计数器的作用，它来帮你管理到底这些异步操作是否完成，完成之后，它会自动调用你提供的处理函数，并将抓取到的数据当参数传过来\
-无限嵌套123456789101
+          eventproxy 控制并发如果并发异步获取两三个地址的数据，并且要在获取到数据之后，对这些数据一起进行利用的话，常规的写法是自己维护一个计数器。\先定义一个 var count = 0，然后每次抓取成功以后，就 count++。如果你是要抓取三个源的数据，由于你根本不知道这些异步操作到底谁先完成
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -586,14 +573,14 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/blogs/b211c1a4.html" itemprop="url">
                   nodejs获取请求参数的方式
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -619,22 +606,6 @@
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-08-30 17:45:56" itemprop="dateModified" datetime="2018-08-30T17:45:56+08:00">2018-08-30</time>
-              
-            
           </span>
 
           
@@ -659,19 +630,20 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/blogs/b211c1a4.html#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/blogs/b211c1a4.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
+          
+             <span id="/blogs/b211c1a4.html" class="leancloud_visitors" data-flag-title="nodejs获取请求参数的方式">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -698,8 +670,7 @@
           nodejs接收get请求参数在http协议中，一个完整的url路径如下：
 
 get请求的参数是直接在url路径中显示的，在path资源路径的后面添加，以？表示参数的开始，以key = value表示参数的键值对，多个参数以&amp;符号分割，hash表示的是资源定位符，由浏览器自己解析处理。
-浏览器向服务端发送get请求主要有两种方式，一种是href跳转，url拼接参数；一种是ajax请求发送参数。
-1234567891011121314151617181920212223242526272829303132333435363738let url = require(&apos;url&ap
+浏览
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -776,14 +747,14 @@ get请求的参数是直接在url路径中显示的，在path资源路径的后�
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/blogs/ba600921.html" itemprop="url">
                   Angular组件通信
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -809,22 +780,6 @@ get请求的参数是直接在url路径中显示的，在path资源路径的后�
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-09-17 11:41:58" itemprop="dateModified" datetime="2018-09-17T11:41:58+08:00">2018-09-17</time>
-              
-            
           </span>
 
           
@@ -849,19 +804,20 @@ get请求的参数是直接在url路径中显示的，在path资源路径的后�
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/blogs/ba600921.html#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/blogs/ba600921.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
+          
+             <span id="/blogs/ba600921.html" class="leancloud_visitors" data-flag-title="Angular组件通信">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -888,7 +844,7 @@ get请求的参数是直接在url路径中显示的，在path资源路径的后�
           输入属性（父组件-&gt;子组件）
 @Input，自定义属性
 
-app.component.ts1234567891011import &#123; Component &#125; from &apos;@angular/core&apos;;@Component(&#123;  selector: &apos;exe-app&apos;,  template: `   &lt;exe-counter [count]=&quot;initialCount&quot;&gt;&lt;/exe-counter&gt;  `&#125;)export class AppComponent &#12
+app.component.ts1234567891011import &#123; Component &#125; from &apos;@angular/core&apos;;@Component(&#123;  selector
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -965,14 +921,14 @@ app.component.ts1234567891011import &#123; Component &#125; from &apos;@angular/
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/blogs/accf6790.html" itemprop="url">
                   Angular路由缓存
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -998,22 +954,6 @@ app.component.ts1234567891011import &#123; Component &#125; from &apos;@angular/
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-08-30 17:45:56" itemprop="dateModified" datetime="2018-08-30T17:45:56+08:00">2018-08-30</time>
-              
-            
           </span>
 
           
@@ -1038,19 +978,20 @@ app.component.ts1234567891011import &#123; Component &#125; from &apos;@angular/
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/blogs/accf6790.html#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/blogs/accf6790.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
+          
+             <span id="/blogs/accf6790.html" class="leancloud_visitors" data-flag-title="Angular路由缓存">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -1075,7 +1016,7 @@ app.component.ts1234567891011import &#123; Component &#125; from &apos;@angular/
         
           
           angular路由缓存路由缓存，input输入状态， 下拉框选中状态
-1234567891011121314151617181920212223242526272829303132333435363738import &#123;RouteReuseStrategy, DefaultUrlSerializer, ActivatedRouteSnapshot, DetachedRouteHandle&#125; from &apos;@angular/router&apos;;export class CustomReuseStrategy implements RouteReuseStrate
+1234567891011121314151617181920212223242526272829303132333435363738import &#123;RouteReuseStrategy, DefaultUrlSeria
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1152,14 +1093,14 @@ app.component.ts1234567891011import &#123; Component &#125; from &apos;@angular/
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/blogs/36b47415.html" itemprop="url">
                   Angular的hash模式
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -1185,22 +1126,6 @@ app.component.ts1234567891011import &#123; Component &#125; from &apos;@angular/
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-08-30 17:45:56" itemprop="dateModified" datetime="2018-08-30T17:45:56+08:00">2018-08-30</time>
-              
-            
           </span>
 
           
@@ -1225,19 +1150,20 @@ app.component.ts1234567891011import &#123; Component &#125; from &apos;@angular/
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/blogs/36b47415.html#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/blogs/36b47415.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
+          
+             <span id="/blogs/36b47415.html" class="leancloud_visitors" data-flag-title="Angular的hash模式">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -1265,11 +1191,7 @@ app.component.ts1234567891011import &#123; Component &#125; from &apos;@angular/
 
 针对初始化时带有路由的项目
 
-12345配置路由时，routing.module.ts文件中，@NgModule(&#123;  imports: [RouterModule.forRoot(routes , &#123; useHash: true &#125;)],  exports: [RouterModule]&#125;)
-
-app.module.ts中进行配置
-
-1234// 引入相关服务import &#123;HashL
+12345配置路由时，routing.module.ts文件中，@NgModule(&#123;  impor
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1346,14 +1268,14 @@ app.module.ts中进行配置
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/blogs/332631ae.html" itemprop="url">
                   Angular如何使用第三方库
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -1379,22 +1301,6 @@ app.module.ts中进行配置
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-08-30 17:45:56" itemprop="dateModified" datetime="2018-08-30T17:45:56+08:00">2018-08-30</time>
-              
-            
           </span>
 
           
@@ -1419,19 +1325,20 @@ app.module.ts中进行配置
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/blogs/332631ae.html#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/blogs/332631ae.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
+          
+             <span id="/blogs/332631ae.html" class="leancloud_visitors" data-flag-title="Angular如何使用第三方库">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -1456,14 +1363,7 @@ app.module.ts中进行配置
         
           
           TypeScript模块系统模块是指在其自身作用域里执行，而不是在全局作用域里；模块间是依靠 export 和 import 建立关系。编译器在编译过程中，也是依赖这种关系来定位需要编译的文件。
-TypeScript 依然还是以 JavaScript 文件的形式发布类库，这会导致类型无法表述，需要配合声明文件对其进行类型描述；因此声明文件成了类库一个必不可少的组成部分。
-分类有声明文件要分清类库是否有声明文件 *.d.ts
-
-类库自带
-
-从 Npm 安装一个依赖包后，可以直接检查该依赖包库的 package.json 是否包含 typings 节点，该节点对应的文件就是声明文件。
-
-TypeS
+TypeScript 依然还是以 JavaScript 文件的形式发布类库，这会导致类型无法表述，需要配
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1540,14 +1440,14 @@ TypeS
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/blogs/527c21d3.html" itemprop="url">
                   Angular路由
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -1573,22 +1473,6 @@ TypeS
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-09-03 15:24:32" itemprop="dateModified" datetime="2018-09-03T15:24:32+08:00">2018-09-03</time>
-              
-            
           </span>
 
           
@@ -1613,19 +1497,20 @@ TypeS
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/blogs/527c21d3.html#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/blogs/527c21d3.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
+          
+             <span id="/blogs/527c21d3.html" class="leancloud_visitors" data-flag-title="Angular路由">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -1652,7 +1537,7 @@ TypeS
           angular路由
 Base href
 
-index.html中存在&lt;base&gt;标签,路由需要根据这个来确定应用程序的根目录。例如，当我们转到http://example.com/page1时，如果我们没有定义应用程序的基础路径，路由将无法知道我们的应用的托管地址是http://example.com还是http://example.com/page1。12345678910&lt;!doctype html&gt;&lt;html&gt;  &lt;head&gt;    &lt;base href=&quot;/&quot;&gt;    &lt;title&gt;Applic
+index.html中存在&lt;base&gt;标签,路由需要根据这个来确定应用程序的根目录。例如，当我们转到http://example.com/page1时，如果我们没有定义应用程序的基础路径，路由将无法知道我们的应用的托管地址是http://exam
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1729,14 +1614,14 @@ index.html中存在&lt;base&gt;标签,路由需要根据这个来确定应用程
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/blogs/a0e83b13.html" itemprop="url">
                   Angular路由之history与locationStrategy
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -1762,22 +1647,6 @@ index.html中存在&lt;base&gt;标签,路由需要根据这个来确定应用程
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-08-30 17:45:56" itemprop="dateModified" datetime="2018-08-30T17:45:56+08:00">2018-08-30</time>
-              
-            
           </span>
 
           
@@ -1802,19 +1671,20 @@ index.html中存在&lt;base&gt;标签,路由需要根据这个来确定应用程
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/blogs/a0e83b13.html#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/blogs/a0e83b13.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
+          
+             <span id="/blogs/a0e83b13.html" class="leancloud_visitors" data-flag-title="Angular路由之history与locationStrategy">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -1840,12 +1710,7 @@ index.html中存在&lt;base&gt;标签,路由需要根据这个来确定应用程
           
           History 对象属性
 length  只读的，其值为一个整数，标志包括当前页面在内的会话历史中的记录数量，比如我们通常打开一个空白窗口，length 为 0，再访问一个页面，其 length 变为 1。
-scrollRestoration  允许 Web 应用在会话历史导航时显式地设置默认滚动复原，其值为 auto 或 manual。
-state  只读，返回代表会话历史堆栈顶部记录的任意可序列化类型数据值，我们可以以此来区别不同会话历史纪录
-
-方法
-back()  返回会话历史记录中的上一个页面，等价于 window.history.go(-1) 和点击浏览器的后退按钮。
-forward
+scrollRestoration  允许 Web 应用在会话历史导航时显式地设置默认滚动复
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1922,14 +1787,14 @@ forward
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/blogs/c793072c.html" itemprop="url">
                   WebSocket
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -1955,22 +1820,6 @@ forward
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-08-31 13:27:29" itemprop="dateModified" datetime="2018-08-31T13:27:29+08:00">2018-08-31</time>
-              
-            
           </span>
 
           
@@ -1995,19 +1844,20 @@ forward
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/blogs/c793072c.html#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/blogs/c793072c.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
+          
+             <span id="/blogs/c793072c.html" class="leancloud_visitors" data-flag-title="WebSocket">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -2035,11 +1885,7 @@ forward
 特点：
 服务器可以主动向客户端推送信息，客户端也可以主动向服务器发送信息，是真正的双向平等对话，属于服务器推送技术的一种。WebSocket 允许服务器端与客户端进行全双工（full-duplex）的通信。
 建立在 TCP 协议之上，服务器端的实现比较容易。
-与 HTTP 协议有着良好的兼容性。默认端口也是80和443，并且握手阶段采用 HTTP 协议，因此握手时不容易屏蔽，能通过各种 HTTP 代理服务器。
-数据格式比较轻量，性能开销小，通信高效。
-可以发送文本，也可以发送二进制数据。
-没有同源限制，客户端可以与任意服务器通信，完全可以取代 Ajax。
-协议标识符是ws（
+与 HTTP 协议有
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -2097,8 +1943,6 @@ forward
           
 
         </div>
-      </div>
-    </main>
         
           
   
@@ -2230,42 +2074,42 @@ forward
             <div class="links-of-author motion-element">
               
                 <span class="links-of-author-item">
-                  <a href="https://github.com/juphy" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  <a href="https://github.com/juphy" target="_blank" title="GitHub" rel="external nofollow"><i class="fa fa-fw fa-github"></i>GitHub</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="mailto:gaojuphy@gmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  <a href="mailto:gaojuphy@gmail.com" target="_blank" title="E-Mail" rel="external nofollow"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://plus.google.com" target="_blank" title="Google"><i class="fa fa-fw fa-google"></i>Google</a>
+                  <a href="https://plus.google.com" target="_blank" title="Google" rel="external nofollow"><i class="fa fa-fw fa-google"></i>Google</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://twitter.com/gaojuphy" target="_blank" title="Twitter"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  <a href="https://twitter.com/gaojuphy" target="_blank" title="Twitter" rel="external nofollow"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://www.facebook.com/juphy.gao.1" target="_blank" title="FB Page"><i class="fa fa-fw fa-facebook"></i>FB Page</a>
+                  <a href="https://www.facebook.com/juphy.gao.1" target="_blank" title="FB Page" rel="external nofollow"><i class="fa fa-fw fa-facebook"></i>FB Page</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://stackoverflow.com/users/10190982/juphy" target="_blank" title="StackOverflow"><i class="fa fa-fw fa-stack-overflow"></i>StackOverflow</a>
+                  <a href="https://stackoverflow.com/users/10190982/juphy" target="_blank" title="StackOverflow" rel="external nofollow"><i class="fa fa-fw fa-stack-overflow"></i>StackOverflow</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://www.weibo.com/juphy" target="_blank" title="微博"><i class="fa fa-fw fa-weibo"></i>微博</a>
+                  <a href="https://www.weibo.com/juphy" target="_blank" title="微博" rel="external nofollow"><i class="fa fa-fw fa-weibo"></i>微博</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://www.instagram.com/gaojuphy" target="_blank" title="Instagram"><i class="fa fa-fw fa-instagram"></i>Instagram</a>
+                  <a href="https://www.instagram.com/gaojuphy" target="_blank" title="Instagram" rel="external nofollow"><i class="fa fa-fw fa-instagram"></i>Instagram</a>
                   
                 </span>
               
@@ -2309,11 +2153,14 @@ forward
 
 
         
+      </div>
+    </main>
+
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2017 – <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Juphy</span>
 
@@ -2323,10 +2170,11 @@ forward
 </div>
 
 
+  
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.8.0</div>
 
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
@@ -2336,28 +2184,19 @@ forward
 
 
         
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  
-    <span class="site-uv" title="总访客量">
-      <i class="fa fa-user"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-    </span>
-  
-
-  
-    <span class="site-pv" title="总访问量">
-      <i class="fa fa-eye"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-    </span>
-  
-</div>
 
 
 
 
 
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=65897563";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -2376,18 +2215,7 @@ forward
     
 
     
-	
-    
 
-    
-      <div>
-        <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<div class="addthis_inline_share_toolbox">
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b293112ac9151d9" async="async"></script>
-</div>
-
-      </div>
-    
   </div>
 
   
@@ -2410,6 +2238,8 @@ forward
 
 
 
+
+  
 
 
 
@@ -2438,6 +2268,11 @@ forward
     <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
 
   
 
@@ -2464,6 +2299,18 @@ forward
 
 
 
+	
+
+
+
+
+
+  
+
+
+
+
+
   
 
 
@@ -2473,41 +2320,111 @@ forward
 
 
 
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  
-  
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
 
-  <script type="text/javascript">
-    var GUEST = ['nick','mail','link'];
-    var guest = 'nick, email, link';
-    guest = guest.split(',').filter(function (item) {
-      return GUEST.indexOf(item)>-1;
-    });
-    new Valine({
-        av: AV,
-        el: '#comments' ,
-        verify: false,
-        notify: false,
-        appId: 'Ld534hVQrPScL0zAhVHDC0Cp-gzGzoHsz',
-        appKey: 'f5OLYN4RbCy9k4MPW8tKXDbW',
-        placeholder: '快去抢沙发吧！！！',
-        avatar:'mm',
-        meta:guest,
-        pageSize:'10' || 10,
-        visitor: false
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("Ld534hVQrPScL0zAhVHDC0Cp-gzGzoHsz", "f5OLYN4RbCy9k4MPW8tKXDbW");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text(counter.get('time'));
+            
+            counter.save(null, {
+              success: function(counter) {
+                
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! See more at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see here how to solve it: https://github.com/theme-next/hexo-leancloud-counter-security. \n But you also can use LeanCloud without security, by set \'security\' option to \'false\'.');
+            
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
     });
   </script>
 
 
-
-  
-
-
-
-
-
-  
 
   
 
@@ -2559,6 +2476,27 @@ forward
 
   
   
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+  
 
   
 
@@ -2568,63 +2506,12 @@ forward
 
 
   
+  <script type="text/javascript" src="/js/src/exturl.js?v=6.3.0"></script>
+
 
   
 
   
 
 </body>
-<script>
-    var ballColors = [
-        '255, 0, 0, ',
-        '205, 51, 255, ',
-        '0, 64, 255, ',
-        '0, 255, 255, ',
-        '153, 254, 0, ',
-        '254, 254, 0, ',
-        '255, 101, 1, '
-    ];
-    window.onload = function () {
-        var canvas = document.getElementById('canvas');
-        var context = canvas.getContext('2d');
-        init(context);
-        window.onresize = function () {
-            init(context);
-        };
-        canvas.onclick = function () {
-            init(context);
-        }
-    };
-    function init (context) {
-        context.globalAlpha = 0;
-        var screen = screenSize();
-        canvas.width = screen.width;
-        canvas.height = screen.height;
-        var num = parseInt(screen.width * screen.height / 100000);
-        if (num < 10) num = 10;
-        balls = [];
-        for (var i = 0; i < num; i++) {
-            var opacity = 0.06 + Math.random() * 0.16;
-            var color = 'rgba(' + ballColors[parseInt(Math.random() * 7)] + opacity + ')';
-            var ball = {
-                x: parseInt(200 * Math.random() * screen.width / 200),
-                y: parseInt(200 * Math.random() * screen.height / 200),
-                r: 20 + parseInt(Math.random() * (10 * num)),
-                c: color
-            };
-            balls.push(ball);
-            paintBall(context, ball.x, ball.y, ball.r, ball.c);
-        }
-    }
-    function paintBall(context, x, y, r, c) {
-        context.fillStyle = c;
-        context.beginPath();
-        context.arc(x, y, r, 0, 2 * Math.PI, false);
-        context.closePath();
-        context.fill();
-    }
-    function screenSize () {
-        return {height: document.getElementById('header').clientHeight, width: document.getElementById('canvas').clientWidth};
-    }
-</script>
 </html>

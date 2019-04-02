@@ -18,28 +18,24 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="baidu-site-verification" content="GdjCeo8WaE">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
-<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
-<style>
-    .pace .pace-progress {
-        background: #4f5254; /*进度条颜色*/
-        height: 3px;
-    }
-    .pace .pace-progress-inner {
-         box-shadow: 0 0 10px #4f5254, 0 0 5px     #4f5254; /*阴影颜色*/
-    }
-    .pace .pace-activity {
-        border-top-color: #4f5254;    /*上边框颜色*/
-        border-left-color: #4f5254;    /*左边框颜色*/
-    }
-</style>
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
 
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -120,16 +116,16 @@
 <link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png?v=6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png?v=6.3.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.3.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png?v=6.3.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.3.0">
 
 
-  <link rel="mask-icon" href="/images/logo.png?v=6.3.0" color="#222">
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
 
 
 
@@ -267,7 +263,6 @@
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <canvas id="canvas"></canvas>
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
@@ -281,7 +276,7 @@
     </div>
     
       
-        <p class="site-subtitle">Hello,world!</p>
+        <h1 class="site-subtitle" itemprop="description">Hello,world!</h1>
       
     
   </div>
@@ -332,6 +327,14 @@
           <li class="menu-item menu-item-archives">
     <a href="/archives" rel="section">
       <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
   </li>
 
       
@@ -399,14 +402,14 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/blogs/942c420c.html" itemprop="url">
                   URL编码
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -432,22 +435,6 @@
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-09-13 14:21:33" itemprop="dateModified" datetime="2018-09-13T14:21:33+08:00">2018-09-13</time>
-              
-            
           </span>
 
           
@@ -472,19 +459,20 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/blogs/942c420c.html#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/blogs/942c420c.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
+          
+             <span id="/blogs/942c420c.html" class="leancloud_visitors" data-flag-title="URL编码">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -512,8 +500,7 @@
 
 只有字母和数字[0-9a-zA-Z]、一些特殊符号”$-_.+!*’(),”[不包括双引号]、以及某些保留字，才可以不经过编码直接用于URL。
 
-URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https://zh.wikipedia.org/wiki/%E6%98%A5%E8%8A%82。
-“春”和”节”的utf-8编码分别是”E6 98 A5”和”E8 8A 82”，因此，”%E6%98%A5%E8%8A%82”就是按照顺序，在每个字节前加上%而得到的。
+URL编码网址路径http://zh.wikipedia.o
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -590,14 +577,14 @@ URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https:
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/blogs/5adc8916.html" itemprop="url">
                   Angular中的ng-content使用
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -623,22 +610,6 @@ URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https:
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-09-13 13:39:53" itemprop="dateModified" datetime="2018-09-13T13:39:53+08:00">2018-09-13</time>
-              
-            
           </span>
 
           
@@ -663,19 +634,20 @@ URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https:
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/blogs/5adc8916.html#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/blogs/5adc8916.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
+          
+             <span id="/blogs/5adc8916.html" class="leancloud_visitors" data-flag-title="Angular中的ng-content使用">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -701,9 +673,7 @@ URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https:
           
           基础使用当复用一个组件时，大部分的内容是相同的，只有一部分的内容是不同的，这时可以使用ng-content指令来提高组件的复用性。内容投影，即通过使用指令来实现内容投影的功能。
 以下User的定义如下：
-12345User定义内容：export interface User &#123;  email: string;  password: string;&#125;
-定义一个ChildComponent组件：
-1234567891011121314151617181920212223242526272829303132import &#123; Component, Output, Even
+12345User定义内容：export interface User &#123;  emai
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -780,14 +750,14 @@ URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https:
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/blogs/5f94f955.html" itemprop="url">
                   Angular中的http请求
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -813,22 +783,6 @@ URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https:
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-09-06 11:06:43" itemprop="dateModified" datetime="2018-09-06T11:06:43+08:00">2018-09-06</time>
-              
-            
           </span>
 
           
@@ -853,19 +807,20 @@ URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https:
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/blogs/5f94f955.html#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/blogs/5f94f955.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
+          
+             <span id="/blogs/5f94f955.html" class="leancloud_visitors" data-flag-title="Angular中的http请求">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -897,7 +852,7 @@ URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https:
 创建HttpParams对象
 
 
-直接链式创建12345import &#123; HttpClient, HttpParams &#125; from &apos;@angular/common/http&apos;;const params = new HttpParams().set(&apos;_page&apos;, 1).set(&apos;_limit&apos;, 10);this.http.get(&apos;https://www.juphy.cn/
+直接链式创建12345import &#123; HttpClient, HttpParams &#125; from &apos;@ang
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -974,14 +929,14 @@ URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https:
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/blogs/1e68471e.html" itemprop="url">
                   JavaScript读写excel文件
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -1007,22 +962,6 @@ URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https:
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-09-05 09:58:30" itemprop="dateModified" datetime="2018-09-05T09:58:30+08:00">2018-09-05</time>
-              
-            
           </span>
 
           
@@ -1047,19 +986,20 @@ URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https:
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/blogs/1e68471e.html#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/blogs/1e68471e.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
+          
+             <span id="/blogs/1e68471e.html" class="leancloud_visitors" data-flag-title="JavaScript读写excel文件">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -1094,7 +1034,7 @@ URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https:
 
 老版本浏览器
 
-1234&lt;!-- add the shim first --&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;shim.min.js&quot;&gt;&lt;/script&gt;&lt;!-- after the shim is referenc
+1234&lt;!--
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1171,14 +1111,14 @@ URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https:
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/blogs/c64e9b3c.html" itemprop="url">
                   Angular管道
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -1204,22 +1144,6 @@ URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https:
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-09-04 12:18:40" itemprop="dateModified" datetime="2018-09-04T12:18:40+08:00">2018-09-04</time>
-              
-            
           </span>
 
           
@@ -1244,19 +1168,20 @@ URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https:
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/blogs/c64e9b3c.html#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/blogs/c64e9b3c.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
+          
+             <span id="/blogs/c64e9b3c.html" class="leancloud_visitors" data-flag-title="Angular管道">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -1280,8 +1205,7 @@ URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https:
       
         
           
-          内置管道大小写转换12&lt;p&gt;&#123;&#123;&apos;Angular&apos; | uppercase&#125;&#125;&lt;/p&gt; // ANGULAR&lt;p&gt;&#123;&#123;&apos;Angular&apos; | lowercase&#125;&#125;&lt;/p&gt; // angular
-数值格式化123456pi: number = 3.14e: number = 2.718281828&lt;p&gt;&#123;&#123;e | number: &apos;3.1-5&apos;&#125;&#125;&lt;/
+          内置管道大小写转换12&lt;p&gt;&#123;&#123;&apos;Angular&apos; | uppercase&#125;&#125;&lt;/p&gt; // ANGULAR&lt;p&gt;&#123;&#123;&apos;Angular&apos; | lowercase&#
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1358,14 +1282,14 @@ URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https:
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/blogs/46b44a0a.html" itemprop="url">
                   JavaScript类型转换
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -1387,13 +1311,9 @@ URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https:
                 
               
 
-              <time title="创建时间：2018-08-31 11:22:00 / 修改时间：14:01:46" itemprop="dateCreated datePublished" datetime="2018-08-31T11:22:00+08:00">2018-08-31</time>
+              <time title="创建时间：2018-08-31 11:22:00" itemprop="dateCreated datePublished" datetime="2018-08-31T11:22:00+08:00">2018-08-31</time>
             
 
-            
-              
-
-              
             
           </span>
 
@@ -1419,19 +1339,20 @@ URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https:
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/blogs/46b44a0a.html#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/blogs/46b44a0a.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
+          
+             <span id="/blogs/46b44a0a.html" class="leancloud_visitors" data-flag-title="JavaScript类型转换">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -1459,17 +1380,7 @@ URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https:
 
 转换为数值类型：Number(mix)、parseInt(string,radix)、parseFloat(string)
 转换为字符串类型：toString(radix)、String(mix)
-转换为布尔类型：Boolean(mix)
-
-
-1、Number(mix)函数，可以将任意类型的参数mix转换为数值类型。其规则为：
-
-
-（1）如果是布尔值，true和false分别被转换为1和0
-（2）如果是数字值，返回本身。
-（3）如果是null，返回0.
-（4）如果是undefined，返回NaN。
-（5）如果是字符串，遵
+转换为布尔类型：Boolea
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1546,14 +1457,14 @@ URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https:
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/blogs/a549916c.html" itemprop="url">
                   nodejs文件路径问题
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -1579,22 +1490,6 @@ URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https:
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-08-30 17:45:56" itemprop="dateModified" datetime="2018-08-30T17:45:56+08:00">2018-08-30</time>
-              
-            
           </span>
 
           
@@ -1619,19 +1514,20 @@ URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https:
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/blogs/a549916c.html#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/blogs/a549916c.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
+          
+             <span id="/blogs/a549916c.html" class="leancloud_visitors" data-flag-title="nodejs文件路径问题">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -1658,9 +1554,7 @@ URL编码网址路径http://zh.wikipedia.org/wiki/春节的实际地址是https:
           process.cwd()获取node命令启动路径，其值与代码所在位置无关，即运行node命令时所在的文件夹的绝对路径。
 File System模块使用相对路径读写文件时，参考的就是这个路径。适用于开发命令行程序时，读取命令启动位置目录的文件。
 __dirname被执行的js所在的文件夹的绝对路径
-__filename被执行的js的绝对路径
-require()只有在require时才使用相对路径(./，../)的引用方法。require的使用效果是跟__dirname的效果相同，不会因为启动脚本的目录不一样而改变。
-实例123456789101112131415G://- angular/  
+
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1737,14 +1631,14 @@ require()只有在require时才使用相对路径(./，../)的引用方法。req
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/blogs/664a0ac7.html" itemprop="url">
                   python3发起http请求
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -1770,22 +1664,6 @@ require()只有在require时才使用相对路径(./，../)的引用方法。req
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-08-30 17:45:56" itemprop="dateModified" datetime="2018-08-30T17:45:56+08:00">2018-08-30</time>
-              
-            
           </span>
 
           
@@ -1810,19 +1688,20 @@ require()只有在require时才使用相对路径(./，../)的引用方法。req
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/blogs/664a0ac7.html#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/blogs/664a0ac7.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
+          
+             <span id="/blogs/664a0ac7.html" class="leancloud_visitors" data-flag-title="python3发起http请求">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -1849,8 +1728,7 @@ require()只有在require时才使用相对路径(./，../)的引用方法。req
           urllib
 python内置的标准库模块
 
-urlopen1234567import urllib.requestimport urllib.parseurl = &apos;https://api.github.com/users/github&apos;f = urllib.request.urlopen(url)// html或者json数据都可以解析print(f.read().decode(&apos;utf-8&apos;))
-利用type(f)可以查看输出响应的类型，&lt;class &#39;http.client.HTTPResponse&#39;&gt;，它是一个HTT
+urlopen1234567import urllib.requestimport urllib.parseurl = &apos;https://api.github.com/users/github&apos;f = urllib.request.u
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1927,14 +1805,14 @@ urlopen1234567import urllib.requestimport urllib.parseurl = &apos;https://api.gi
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/blogs/9a610f19.html" itemprop="url">
                   Referer
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -1960,22 +1838,6 @@ urlopen1234567import urllib.requestimport urllib.parseurl = &apos;https://api.gi
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-08-30 17:45:56" itemprop="dateModified" datetime="2018-08-30T17:45:56+08:00">2018-08-30</time>
-              
-            
           </span>
 
           
@@ -2000,19 +1862,20 @@ urlopen1234567import urllib.requestimport urllib.parseurl = &apos;https://api.gi
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/blogs/9a610f19.html#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/blogs/9a610f19.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
+          
+             <span id="/blogs/9a610f19.html" class="leancloud_visitors" data-flag-title="Referer">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -2037,13 +1900,7 @@ urlopen1234567import urllib.requestimport urllib.parseurl = &apos;https://api.gi
         
           
           什么是Referer?
-Referer[sic] 请求头字段允许由客户端指定资源的 URI 来自于哪一个请求地址，这对服务器有好处（应该是 “referrer” 这个字段拼错了）。Referer 请求头让服务器能够拿到请求资源的来源，可以用于分析用户的兴趣爱好、收集日志、优化缓存等等。同时也让服务器能够发现过时的和错误的链接并及时维护。
-
-Referer是HTTP请求header的一部分，当浏览器向web服务器发送请求的时候，头信息里包含有Referer。Request Headers中有一个Referer字段，对应的信息表示一个来源。
-Referer的作用？
-防盗链
-
-如果我在www.a.c
+Referer[sic] 请求头字段允许由客户端指定资源的 URI 来自于哪一个请求地址，这对服务器有好处（应该是 “referrer” 这个字段拼错了）。Referer 请求头让服务器能够拿到请求资源的来源，可以用于分析用户的兴趣爱好、收集日志、优化缓存等等。同时也让服务器
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -2120,14 +1977,14 @@ Referer的作用？
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 <a class="post-title-link" href="/blogs/9b757592.html" itemprop="url">
                   nodejs发起http请求
                 </a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -2153,22 +2010,6 @@ Referer的作用？
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2018-09-10 17:25:57" itemprop="dateModified" datetime="2018-09-10T17:25:57+08:00">2018-09-10</time>
-              
-            
           </span>
 
           
@@ -2193,19 +2034,20 @@ Referer的作用？
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/blogs/9b757592.html#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/blogs/9b757592.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
+          
+             <span id="/blogs/9b757592.html" class="leancloud_visitors" data-flag-title="nodejs发起http请求">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
@@ -2230,7 +2072,7 @@ Referer的作用？
         
           
           【原文】5 Ways to Make HTTP Requests in Node.js
-HTTP模块，http或者https库 需要解析JSON格式123456789101112const https = require(&apos;https&apos;);https.get(&apos;https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&apos;, res =&gt; &#123;    let data = &apos;&apos;;    res.on(&apos;data&apos;, chunk =&gt; &#123;   
+HTTP模块，http或者https库 需要解析JSON格式123456789101112const https = require(&apos;https&apos;);https.get(&apos;http
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -2288,8 +2130,6 @@ HTTP模块，http或者https库 需要解析JSON格式123456789101112const https
           
 
         </div>
-      </div>
-    </main>
         
           
   
@@ -2421,42 +2261,42 @@ HTTP模块，http或者https库 需要解析JSON格式123456789101112const https
             <div class="links-of-author motion-element">
               
                 <span class="links-of-author-item">
-                  <a href="https://github.com/juphy" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  <a href="https://github.com/juphy" target="_blank" title="GitHub" rel="external nofollow"><i class="fa fa-fw fa-github"></i>GitHub</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="mailto:gaojuphy@gmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  <a href="mailto:gaojuphy@gmail.com" target="_blank" title="E-Mail" rel="external nofollow"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://plus.google.com" target="_blank" title="Google"><i class="fa fa-fw fa-google"></i>Google</a>
+                  <a href="https://plus.google.com" target="_blank" title="Google" rel="external nofollow"><i class="fa fa-fw fa-google"></i>Google</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://twitter.com/gaojuphy" target="_blank" title="Twitter"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  <a href="https://twitter.com/gaojuphy" target="_blank" title="Twitter" rel="external nofollow"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://www.facebook.com/juphy.gao.1" target="_blank" title="FB Page"><i class="fa fa-fw fa-facebook"></i>FB Page</a>
+                  <a href="https://www.facebook.com/juphy.gao.1" target="_blank" title="FB Page" rel="external nofollow"><i class="fa fa-fw fa-facebook"></i>FB Page</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://stackoverflow.com/users/10190982/juphy" target="_blank" title="StackOverflow"><i class="fa fa-fw fa-stack-overflow"></i>StackOverflow</a>
+                  <a href="https://stackoverflow.com/users/10190982/juphy" target="_blank" title="StackOverflow" rel="external nofollow"><i class="fa fa-fw fa-stack-overflow"></i>StackOverflow</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://www.weibo.com/juphy" target="_blank" title="微博"><i class="fa fa-fw fa-weibo"></i>微博</a>
+                  <a href="https://www.weibo.com/juphy" target="_blank" title="微博" rel="external nofollow"><i class="fa fa-fw fa-weibo"></i>微博</a>
                   
                 </span>
               
                 <span class="links-of-author-item">
-                  <a href="https://www.instagram.com/gaojuphy" target="_blank" title="Instagram"><i class="fa fa-fw fa-instagram"></i>Instagram</a>
+                  <a href="https://www.instagram.com/gaojuphy" target="_blank" title="Instagram" rel="external nofollow"><i class="fa fa-fw fa-instagram"></i>Instagram</a>
                   
                 </span>
               
@@ -2500,11 +2340,14 @@ HTTP模块，http或者https库 需要解析JSON格式123456789101112const https
 
 
         
+      </div>
+    </main>
+
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2017 – <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Juphy</span>
 
@@ -2514,10 +2357,11 @@ HTTP模块，http或者https库 需要解析JSON格式123456789101112const https
 </div>
 
 
+  
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.8.0</div>
 
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
@@ -2527,28 +2371,19 @@ HTTP模块，http或者https库 需要解析JSON格式123456789101112const https
 
 
         
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  
-    <span class="site-uv" title="总访客量">
-      <i class="fa fa-user"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-    </span>
-  
-
-  
-    <span class="site-pv" title="总访问量">
-      <i class="fa fa-eye"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-    </span>
-  
-</div>
 
 
 
 
 
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=65897563";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -2567,18 +2402,7 @@ HTTP模块，http或者https库 需要解析JSON格式123456789101112const https
     
 
     
-	
-    
 
-    
-      <div>
-        <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<div class="addthis_inline_share_toolbox">
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b293112ac9151d9" async="async"></script>
-</div>
-
-      </div>
-    
   </div>
 
   
@@ -2601,6 +2425,8 @@ HTTP模块，http或者https库 需要解析JSON格式123456789101112const https
 
 
 
+
+  
 
 
 
@@ -2629,6 +2455,11 @@ HTTP模块，http或者https库 需要解析JSON格式123456789101112const https
     <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
 
   
 
@@ -2655,6 +2486,18 @@ HTTP模块，http或者https库 需要解析JSON格式123456789101112const https
 
 
 
+	
+
+
+
+
+
+  
+
+
+
+
+
   
 
 
@@ -2664,41 +2507,111 @@ HTTP模块，http或者https库 需要解析JSON格式123456789101112const https
 
 
 
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  
-  
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
 
-  <script type="text/javascript">
-    var GUEST = ['nick','mail','link'];
-    var guest = 'nick, email, link';
-    guest = guest.split(',').filter(function (item) {
-      return GUEST.indexOf(item)>-1;
-    });
-    new Valine({
-        av: AV,
-        el: '#comments' ,
-        verify: false,
-        notify: false,
-        appId: 'Ld534hVQrPScL0zAhVHDC0Cp-gzGzoHsz',
-        appKey: 'f5OLYN4RbCy9k4MPW8tKXDbW',
-        placeholder: '快去抢沙发吧！！！',
-        avatar:'mm',
-        meta:guest,
-        pageSize:'10' || 10,
-        visitor: false
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("Ld534hVQrPScL0zAhVHDC0Cp-gzGzoHsz", "f5OLYN4RbCy9k4MPW8tKXDbW");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text(counter.get('time'));
+            
+            counter.save(null, {
+              success: function(counter) {
+                
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! See more at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see here how to solve it: https://github.com/theme-next/hexo-leancloud-counter-security. \n But you also can use LeanCloud without security, by set \'security\' option to \'false\'.');
+            
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
     });
   </script>
 
 
-
-  
-
-
-
-
-
-  
 
   
 
@@ -2752,6 +2665,27 @@ HTTP模块，http或者https库 需要解析JSON格式123456789101112const https
 
   
   
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+  
 
   
 
@@ -2761,63 +2695,12 @@ HTTP模块，http或者https库 需要解析JSON格式123456789101112const https
 
 
   
+  <script type="text/javascript" src="/js/src/exturl.js?v=6.3.0"></script>
+
 
   
 
   
 
 </body>
-<script>
-    var ballColors = [
-        '255, 0, 0, ',
-        '205, 51, 255, ',
-        '0, 64, 255, ',
-        '0, 255, 255, ',
-        '153, 254, 0, ',
-        '254, 254, 0, ',
-        '255, 101, 1, '
-    ];
-    window.onload = function () {
-        var canvas = document.getElementById('canvas');
-        var context = canvas.getContext('2d');
-        init(context);
-        window.onresize = function () {
-            init(context);
-        };
-        canvas.onclick = function () {
-            init(context);
-        }
-    };
-    function init (context) {
-        context.globalAlpha = 0;
-        var screen = screenSize();
-        canvas.width = screen.width;
-        canvas.height = screen.height;
-        var num = parseInt(screen.width * screen.height / 100000);
-        if (num < 10) num = 10;
-        balls = [];
-        for (var i = 0; i < num; i++) {
-            var opacity = 0.06 + Math.random() * 0.16;
-            var color = 'rgba(' + ballColors[parseInt(Math.random() * 7)] + opacity + ')';
-            var ball = {
-                x: parseInt(200 * Math.random() * screen.width / 200),
-                y: parseInt(200 * Math.random() * screen.height / 200),
-                r: 20 + parseInt(Math.random() * (10 * num)),
-                c: color
-            };
-            balls.push(ball);
-            paintBall(context, ball.x, ball.y, ball.r, ball.c);
-        }
-    }
-    function paintBall(context, x, y, r, c) {
-        context.fillStyle = c;
-        context.beginPath();
-        context.arc(x, y, r, 0, 2 * Math.PI, false);
-        context.closePath();
-        context.fill();
-    }
-    function screenSize () {
-        return {height: document.getElementById('header').clientHeight, width: document.getElementById('canvas').clientWidth};
-    }
-</script>
 </html>

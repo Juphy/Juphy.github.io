@@ -201,7 +201,7 @@ body {
     padding-right: 0 !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
   body {
     font-size: 16px;
   }
@@ -445,34 +445,23 @@ body {
 .header-inner {
   margin: 0 auto;
   padding: 100px 0 70px;
-  width: 700px;
-}
-@media (min-width: 1200px) {
-  .container .header-inner {
-    width: 960px;
-  }
+  width: 960px;
 }
 @media (min-width: 1600px) {
   .container .header-inner {
-    width: 1280px;
+    width: 1024px;
   }
 }
 .main {
-  padding-bottom: 116px;
-  padding-top: 60px;
+  padding-bottom: 150px;
 }
 .main-inner {
   margin: 0 auto;
-  width: 700px;
-}
-@media (min-width: 1200px) {
-  .container .main-inner {
-    width: 960px;
-  }
+  width: 960px;
 }
 @media (min-width: 1600px) {
   .container .main-inner {
-    width: 1280px;
+    width: 1024px;
   }
 }
 .footer {
@@ -485,17 +474,11 @@ body {
 .footer-inner {
   box-sizing: border-box;
   margin: 20px auto;
-  width: 700px;
-  margin-top: 0;
-}
-@media (min-width: 1200px) {
-  .container .footer-inner {
-    width: 960px;
-  }
+  width: 960px;
 }
 @media (min-width: 1600px) {
   .container .footer-inner {
-    width: 1280px;
+    width: 1024px;
   }
 }
 pre,
@@ -586,6 +569,7 @@ pre code {
 }
 .highlight .line {
   height: 20px;
+  white-space: normal;
 }
 .gutter {
   -webkit-user-select: none;
@@ -665,8 +649,11 @@ pre .keyword,
 pre .javascript .function {
   color: #b294bb;
 }
-.posts-expand .post-body img.full-image {
+.full-image.full-image.full-image.full-image {
   border: none;
+  max-width: 100%;
+  width: auto;
+  margin: 20px auto 25px;
 }
 .blockquote-center,
 .page-home .post-type-quote blockquote,
@@ -751,6 +738,20 @@ pre .javascript .function {
 .page-archive .group-picture-column {
   max-width: 150px;
   max-height: 150px;
+}
+.exturl {
+  background-color: transparent;
+  cursor: pointer;
+  border-bottom: 1px solid #999;
+}
+.exturl .fa {
+  font-size: 14px;
+}
+.exturl:active,
+.exturl:hover {
+  outline: 0;
+  color: #222;
+  border-bottom-color: #222;
 }
 .post-body .note {
   position: relative;
@@ -1492,7 +1493,7 @@ pre .javascript .function {
   position: absolute;
   font-size: 12px;
   left: 20px;
-  top: 5px;
+  top: 4px;
 }
 .posts-collapse .post-comments-count {
   display: none;
@@ -1581,6 +1582,9 @@ pre .javascript .function {
 .posts-expand .post-meta time {
   border-bottom: 1px dashed #999;
   cursor: help;
+}
+.post-symbolscount {
+  display: inline-block;
 }
 .post-meta-divider {
   margin: 0 0.5em;
@@ -1711,6 +1715,42 @@ pre .javascript .function {
   border-left: 3px solid #ff1700;
   background-color: #f9f9f9;
   list-style: none;
+}
+.post-widgets {
+  border-top: 1px solid #eee;
+  padding-top: 9px;
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.post-widgets .post-meta-divider {
+  height: 28px;
+  color: #999;
+}
+.wp_rating {
+  height: 20px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 20px;
+  padding-top: 6px;
+}
+.social-like {
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.vk_like {
+  width: 85px;
+  height: 21px;
+  padding-top: 7px;
+  align-self: center;
+}
+.fb_like {
+  height: 30px;
+  align-self: center;
 }
 .rtl.post-body p,
 .rtl.post-body a,
@@ -1903,7 +1943,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b428af;
+  background: #5df717;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2064,7 +2104,7 @@ img:hover {
 .with-love {
   display: inline-block;
   margin: 0 5px;
-  color: #ff0000;
+  color: #808080;
 }
 .powered-by,
 .theme-info {
@@ -2204,8 +2244,31 @@ img:hover {
     transform: scale(1.1);
   }
 }
+.post-spread {
+  margin-top: 20px;
+  text-align: center;
+}
+.jiathis_style {
+  display: inline-block;
+}
+.jiathis_style a {
+  border: none;
+}
 .fa {
   font-family: FontAwesome !important;
+}
+.post-spread {
+  margin-top: 20px;
+  text-align: center;
+}
+.bdshare-slide-button-box a {
+  border: none;
+}
+.bdsharebuttonbox {
+  display: inline-block;
+}
+.bdsharebuttonbox a {
+  border: none;
 }
 .local-search-pop-overlay {
   position: fixed;
@@ -2327,6 +2390,36 @@ img:hover {
 .site-pv .busuanzi-value,
 .page-pv .busuanzi-value {
   margin: 0 5px;
+}
+.site-uv {
+  margin-right: 10px;
+}
+.site-uv::after {
+  content: "|";
+  padding-left: 10px;
+}
+#needsharebutton-postbottom {
+  position: relative;
+  cursor: pointer;
+  height: 26px;
+}
+#needsharebutton-postbottom .btn {
+  display: initial;
+  padding: 1px 4px;
+  border: 1px solid #222;
+  border-radius: 3px;
+}
+#needsharebutton-float {
+  position: fixed;
+  bottom: 38px;
+  left: -8px;
+  z-index: 9999;
+  cursor: pointer;
+}
+#needsharebutton-float .btn {
+  padding: 0 10px 0 14px;
+  border: 1px solid #222;
+  border-radius: 4px;
 }
 .page-archive .archive-page-counter {
   position: relative;
@@ -2669,97 +2762,4 @@ embed {
 }
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
-}
-#main {
-  background: url("https://api.yingjoy.cn/pic/?t=random&w=1920");
-  background: url("https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  opacity: 1;
-  background-attachment: fixed;
-  background-position: 50% 50%;
-}
-.main-inner {
-  opacity: 0.93;
-  min-height: 500px;
-}
-code {
-  color: #87ceeb;
-  background: #fbf7f8;
-  margin: 2px;
-}
-.highlight,
-pre {
-  margin: 5px 0;
-  padding: 5px;
-  border-radius: 3px;
-}
-.highlight,
-code,
-pre {
-  border: 1px solid #d6d6d6;
-}
-.post {
-  background: #fff;
-  margin: 0 25px;
-  margin-bottom: 60px;
-  padding: 25px;
-  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
-  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
-}
-.post-expand {
-  padding-top: 0;
-}
-.post-footer {
-  display: none;
-}
-#header {
-  position: relative;
-  opacity: 0.85;
-  background: rgba(82,168,236,0.3) url("../../images/header_bg.png");
-}
-.header-inner {
-  padding: 36px 0 24px;
-}
-#canvas {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-}
-.brand {
-  background: transparent;
-  color: #000;
-}
-.brand:hover {
-  color: #000;
-}
-#comments {
-  padding: 25px;
-  background: #fff;
-}
-.container {
-  background: transparent;
-}
-.posts-collapse::after {
-  bottom: 0px;
-  height: auto;
-}
-.page-archive .archive-page-counter {
-  color: #000;
-  display: none;
-}
-.archive-year {
-  color: #000;
-}
-.category-all-page .category-all {
-  padding: 0 36px;
-}
-.pagination {
-  border: none;
-  margin: 120px 25px 40px;
 }
