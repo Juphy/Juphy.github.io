@@ -1,409 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-
-    
   <url>
     <loc>http://blog.juphy.cn/blogs/ba600921.html</loc>
-    <lastmod>2018-09-17T03:41:58.188Z</lastmod>
-    <data>
-        <display>
-        <title>Angular组件通信</title>
-        <pubTime>2018-06-20T06:56:00.000Z</pubTime>
-        
-        <tag>Angular</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="http://blog.juphy.cn/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-09-17</lastmod>
+  </url>  <url>
     <loc>http://blog.juphy.cn/blogs/942c420c.html</loc>
-    <lastmod>2018-09-13T06:21:33.583Z</lastmod>
-    <data>
-        <display>
-        <title>URL编码</title>
-        <pubTime>2018-09-10T06:56:00.000Z</pubTime>
-        
-        <tag>URL</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="http://blog.juphy.cn/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-09-13</lastmod>
+  </url>  <url>
     <loc>http://blog.juphy.cn/blogs/5adc8916.html</loc>
-    <lastmod>2018-09-13T05:39:53.065Z</lastmod>
-    <data>
-        <display>
-        <title>Angular中的ng-content使用</title>
-        <pubTime>2018-09-07T06:56:00.000Z</pubTime>
-        
-        <tag>Angular</tag>
-         
-        <tag>ng-content</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="http://blog.juphy.cn/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-09-13</lastmod>
+  </url>  <url>
     <loc>http://blog.juphy.cn/blogs/9b757592.html</loc>
-    <lastmod>2018-09-10T09:25:57.831Z</lastmod>
-    <data>
-        <display>
-        <title>nodejs发起http请求</title>
-        <pubTime>2018-08-23T03:22:00.000Z</pubTime>
-        
-        <tag>fetch</tag>
-         
-        <tag>http</tag>
-         
-        <tag>request</tag>
-         
-        <tag>axios</tag>
-         
-         
-           
-             
-              <breadCrumb title="node" url="http://blog.juphy.cn/categories/node/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-09-10</lastmod>
+  </url>  <url>
     <loc>http://blog.juphy.cn/blogs/5f94f955.html</loc>
-    <lastmod>2018-09-06T03:06:43.823Z</lastmod>
-    <data>
-        <display>
-        <title>Angular中的http请求</title>
-        <pubTime>2018-09-05T06:56:00.000Z</pubTime>
-        
-        <tag>Angular</tag>
-         
-        <tag>http</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="http://blog.juphy.cn/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-09-06</lastmod>
+  </url>  <url>
     <loc>http://blog.juphy.cn/blogs/1e68471e.html</loc>
-    <lastmod>2018-09-05T01:58:30.650Z</lastmod>
-    <data>
-        <display>
-        <title>JavaScript读写excel文件</title>
-        <pubTime>2018-09-04T06:56:00.000Z</pubTime>
-        
-        <tag>Angular</tag>
-         
-        <tag>nodejs</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="http://blog.juphy.cn/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-09-05</lastmod>
+  </url>  <url>
     <loc>http://blog.juphy.cn/blogs/c64e9b3c.html</loc>
-    <lastmod>2018-09-04T04:18:40.275Z</lastmod>
-    <data>
-        <display>
-        <title>Angular管道</title>
-        <pubTime>2018-09-02T06:56:00.000Z</pubTime>
-        
-        <tag>Angular</tag>
-         
-        <tag>pipe</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="http://blog.juphy.cn/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-09-04</lastmod>
+  </url>  <url>
     <loc>http://blog.juphy.cn/blogs/527c21d3.html</loc>
-    <lastmod>2018-09-03T07:24:32.378Z</lastmod>
-    <data>
-        <display>
-        <title>Angular路由</title>
-        <pubTime>2018-05-24T06:56:00.000Z</pubTime>
-        
-        <tag>Angular</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="http://blog.juphy.cn/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-09-03</lastmod>
+  </url>  <url>
     <loc>http://blog.juphy.cn/blogs/46b44a0a.html</loc>
-    <lastmod>2018-08-31T06:01:46.454Z</lastmod>
-    <data>
-        <display>
-        <title>JavaScript类型转换</title>
-        <pubTime>2018-08-31T03:22:00.000Z</pubTime>
-        
-        <tag>类型转换</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="http://blog.juphy.cn/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-31</lastmod>
+  </url>  <url>
     <loc>http://blog.juphy.cn/blogs/c793072c.html</loc>
-    <lastmod>2018-08-31T05:27:29.891Z</lastmod>
-    <data>
-        <display>
-        <title>WebSocket</title>
-        <pubTime>2018-05-10T06:56:00.000Z</pubTime>
-        
-        <tag>Angular</tag>
-         
-        <tag>WebSocket</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="http://blog.juphy.cn/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-31</lastmod>
+  </url>  <url>
     <loc>http://blog.juphy.cn/blogs/a0e83b13.html</loc>
-    <lastmod>2018-08-30T09:45:56.189Z</lastmod>
-    <data>
-        <display>
-        <title>Angular路由之history与locationStrategy</title>
-        <pubTime>2018-05-17T06:56:00.000Z</pubTime>
-        
-        <tag>Angular</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="http://blog.juphy.cn/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-30</lastmod>
+  </url>  <url>
     <loc>http://blog.juphy.cn/blogs/accf6790.html</loc>
-    <lastmod>2018-08-30T09:45:56.183Z</lastmod>
-    <data>
-        <display>
-        <title>Angular路由缓存</title>
-        <pubTime>2018-06-13T06:56:00.000Z</pubTime>
-        
-        <tag>Angular</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="http://blog.juphy.cn/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-30</lastmod>
+  </url>  <url>
     <loc>http://blog.juphy.cn/blogs/664a0ac7.html</loc>
-    <lastmod>2018-08-30T09:45:56.182Z</lastmod>
-    <data>
-        <display>
-        <title>python3发起http请求</title>
-        <pubTime>2018-08-24T03:22:00.000Z</pubTime>
-        
-        <tag>urllib</tag>
-         
-        <tag>requests</tag>
-         
-         
-           
-             
-              <breadCrumb title="python3" url="http://blog.juphy.cn/categories/python3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-30</lastmod>
+  </url>  <url>
     <loc>http://blog.juphy.cn/blogs/b211c1a4.html</loc>
-    <lastmod>2018-08-30T09:45:56.179Z</lastmod>
-    <data>
-        <display>
-        <title>nodejs获取请求参数的方式</title>
-        <pubTime>2018-08-14T03:22:00.000Z</pubTime>
-        
-        <tag>express</tag>
-         
-         
-           
-             
-              <breadCrumb title="node" url="http://blog.juphy.cn/categories/node/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-30</lastmod>
+  </url>  <url>
     <loc>http://blog.juphy.cn/blogs/a549916c.html</loc>
-    <lastmod>2018-08-30T09:45:56.170Z</lastmod>
-    <data>
-        <display>
-        <title>nodejs文件路径问题</title>
-        <pubTime>2018-08-28T03:22:00.000Z</pubTime>
-        
-        <tag>path</tag>
-         
-         
-           
-             
-              <breadCrumb title="node" url="http://blog.juphy.cn/categories/node/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-30</lastmod>
+  </url>  <url>
     <loc>http://blog.juphy.cn/blogs/445785db.html</loc>
-    <lastmod>2018-08-30T09:45:56.168Z</lastmod>
-    <data>
-        <display>
-        <title>nodejs控制异步并发</title>
-        <pubTime>2018-08-20T07:26:00.000Z</pubTime>
-        
-        <tag>eventproxy</tag>
-         
-        <tag>async</tag>
-         
-         
-           
-             
-              <breadCrumb title="node" url="http://blog.juphy.cn/categories/node/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-30</lastmod>
+  </url>  <url>
     <loc>http://blog.juphy.cn/blogs/36b47415.html</loc>
-    <lastmod>2018-08-30T09:45:56.167Z</lastmod>
-    <data>
-        <display>
-        <title>Angular的hash模式</title>
-        <pubTime>2018-06-06T06:56:00.000Z</pubTime>
-        
-        <tag>Angular</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="http://blog.juphy.cn/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-30</lastmod>
+  </url>  <url>
     <loc>http://blog.juphy.cn/blogs/332631ae.html</loc>
-    <lastmod>2018-08-30T09:45:56.164Z</lastmod>
-    <data>
-        <display>
-        <title>Angular如何使用第三方库</title>
-        <pubTime>2018-05-31T06:56:00.000Z</pubTime>
-        
-        <tag>Angular</tag>
-         
-        <tag>TypeScript</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="http://blog.juphy.cn/categories/JavaScript/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
+    <lastmod>2018-08-30</lastmod>
+  </url>  <url>
     <loc>http://blog.juphy.cn/blogs/9a610f19.html</loc>
-    <lastmod>2018-08-30T09:45:56.161Z</lastmod>
-    <data>
-        <display>
-        <title>Referer</title>
-        <pubTime>2018-08-23T08:22:00.000Z</pubTime>
-        
-        <tag>referer</tag>
-         
-         
-           
-             
-              <breadCrumb title="linux" url="http://blog.juphy.cn/categories/linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
+    <lastmod>2018-08-30</lastmod>
+  </url>
 </urlset>
